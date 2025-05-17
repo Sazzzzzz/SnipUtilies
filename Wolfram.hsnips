@@ -1,0 +1,1701 @@
+# 符号名称和数学对象
+snippet `\u0060(p|pi)\u0060` "Pi" iA
+\[Pi]
+endsnippet
+snippet `\u0060inf\u0060` "Infinity" iA
+\[Infinity]
+endsnippet
+snippet `\u0060ee\u0060` "ExponentialE" iA
+\[ExponentialE]
+endsnippet
+snippet `\u0060ii\u0060` "ImaginaryI" iA
+\[ImaginaryI]
+endsnippet
+snippet `\u0060jj\u0060` "ImaginaryJ" iA
+\[ImaginaryJ]
+endsnippet
+# 字母和类似字母的形式
+## 希腊字母
+snippet `\u0060(a|alpha)\u0060` "Alpha" iA
+\[Alpha]
+endsnippet
+snippet `\u0060(b|beta)\u0060` "Beta" iA
+\[Beta]
+endsnippet
+snippet `\u0060(g|gamma)\u0060` "Gamma" iA
+\[Gamma]
+endsnippet
+snippet `\u0060(d|delta)\u0060` "Delta" iA
+\[Delta]
+endsnippet
+snippet `\u0060(e|epsilon)\u0060` "Epsilon" iA
+\[Epsilon]
+endsnippet
+snippet `\u0060(ce|cepsilon)\u0060` "CurlyEpsilon" iA
+\[CurlyEpsilon]
+endsnippet
+snippet `\u0060(z|zeta)\u0060` "Zeta" iA
+\[Zeta]
+endsnippet
+snippet `\u0060(h|et|eta)\u0060` "Eta" iA
+\[Eta]
+endsnippet
+snippet `\u0060(q|th|theta)\u0060` "Theta" iA
+\[Theta]
+endsnippet
+snippet `\u0060(cq|cth|ctheta)\u0060` "CurlyTheta" iA
+\[CurlyTheta]
+endsnippet
+snippet `\u0060(i|iota)\u0060` "Iota" iA
+\[Iota]
+endsnippet
+snippet `\u0060(k|kappa)\u0060` "Kappa" iA
+\[Kappa]
+endsnippet
+snippet `\u0060(ck|ckappa)\u0060` "CurlyKappa" iA
+\[CurlyKappa]
+endsnippet
+snippet `\u0060(l|lambda)\u0060` "Lambda" iA
+\[Lambda]
+endsnippet
+snippet `\u0060(m|mu)\u0060` "Mu" iA
+\[Mu]
+endsnippet
+snippet `\u0060(n|nu)\u0060` "Nu" iA
+\[Nu]
+endsnippet
+snippet `\u0060(x|xi)\u0060` "Xi" iA
+\[Xi]
+endsnippet
+snippet `\u0060(om|omicron)\u0060` "Omicron" iA
+\[Omicron]
+endsnippet
+snippet `\u0060(p|pi)\u0060` "Pi" iA
+\[Pi]
+endsnippet
+snippet `\u0060(cp|cpi)\u0060` "CurlyPi" iA
+\[CurlyPi]
+endsnippet
+snippet `\u0060(r|rho)\u0060` "Rho" iA
+\[Rho]
+endsnippet
+snippet `\u0060(cr|crho)\u0060` "CurlyRho" iA
+\[CurlyRho]
+endsnippet
+snippet `\u0060(s|sigma)\u0060` "Sigma" iA
+\[Sigma]
+endsnippet
+snippet `\u0060fs\u0060` "FinalSigma" iA
+\[FinalSigma]
+endsnippet
+snippet `\u0060(t|tau)\u0060` "Tau" iA
+\[Tau]
+endsnippet
+snippet `\u0060(u|upsilon)\u0060` "Upsilon" iA
+\[Upsilon]
+endsnippet
+snippet `\u0060(f|ph|phi)\u0060` "Phi" iA
+\[Phi]
+endsnippet
+snippet `\u0060(j|cph|cphi)\u0060` "CurlyPhi" iA
+\[CurlyPhi]
+endsnippet
+snippet `\u0060(c|ch|chi)\u0060` "Chi" iA
+\[Chi]
+endsnippet
+snippet `\u0060(y|ps|psi)\u0060` "Psi" iA
+\[Psi]
+endsnippet
+snippet `\u0060(o|w|omega)\u0060` "Omega" iA
+\[Omega]
+endsnippet
+snippet `\u0060(di|digamma)\u0060` "Digamma" iA
+\[Digamma]
+endsnippet
+snippet `\u0060(ko|koppa)\u0060` "Koppa" iA
+\[Koppa]
+endsnippet
+snippet `\u0060(sti|stigma)\u0060` "Stigma" iA
+\[Stigma]
+endsnippet
+snippet `\u0060(sa|sampi)\u0060` "Sampi" iA
+\[Sampi]
+endsnippet
+snippet `\u0060(A|Alpha)\u0060` "CapitalAlpha" iA
+\[CapitalAlpha]
+endsnippet
+snippet `\u0060(B|Beta)\u0060` "CapitalBeta" iA
+\[CapitalBeta]
+endsnippet
+snippet `\u0060(G|Gamma)\u0060` "CapitalGamma" iA
+\[CapitalGamma]
+endsnippet
+snippet `\u0060(D|Delta)\u0060` "CapitalDelta" iA
+\[CapitalDelta]
+endsnippet
+snippet `\u0060(E|Epsilon)\u0060` "CapitalEpsilon" iA
+\[CapitalEpsilon]
+endsnippet
+snippet `\u0060(Z|Zeta)\u0060` "CapitalZeta" iA
+\[CapitalZeta]
+endsnippet
+snippet `\u0060(H|Et|Eta)\u0060` "CapitalEta" iA
+\[CapitalEta]
+endsnippet
+snippet `\u0060(Q|Th|Theta)\u0060` "CapitalTheta" iA
+\[CapitalTheta]
+endsnippet
+snippet `\u0060(I|Iota)\u0060` "CapitalIota" iA
+\[CapitalIota]
+endsnippet
+snippet `\u0060(K|Kappa)\u0060` "CapitalKappa" iA
+\[CapitalKappa]
+endsnippet
+snippet `\u0060(L|Lambda)\u0060` "CapitalLambda" iA
+\[CapitalLambda]
+endsnippet
+snippet `\u0060(M|Mu)\u0060` "CapitalMu" iA
+\[CapitalMu]
+endsnippet
+snippet `\u0060(N|Nu)\u0060` "CapitalNu" iA
+\[CapitalNu]
+endsnippet
+snippet `\u0060(X|Xi)\u0060` "CapitalXi" iA
+\[CapitalXi]
+endsnippet
+snippet `\u0060(Om|Omicron)\u0060` "CapitalOmicron" iA
+\[CapitalOmicron]
+endsnippet
+snippet `\u0060(P|Pi)\u0060` "CapitalPi" iA
+\[CapitalPi]
+endsnippet
+snippet `\u0060(R|Rho)\u0060` "CapitalRho" iA
+\[CapitalRho]
+endsnippet
+snippet `\u0060(S|Sigma)\u0060` "CapitalSigma" iA
+\[CapitalSigma]
+endsnippet
+snippet `\u0060(T|Tau)\u0060` "CapitalTau" iA
+\[CapitalTau]
+endsnippet
+snippet `\u0060(U|Upsilon)\u0060` "CapitalUpsilon" iA
+\[CapitalUpsilon]
+endsnippet
+snippet `\u0060(cU|cUpsilon)\u0060` "CurlyCapitalUpsilon" iA
+\[CurlyCapitalUpsilon]
+endsnippet
+snippet `\u0060(F|Ph|Phi)\u0060` "CapitalPhi" iA
+\[CapitalPhi]
+endsnippet
+snippet `\u0060(C|Ch|Chi)\u0060` "CapitalChi" iA
+\[CapitalChi]
+endsnippet
+snippet `\u0060(Y|Ps|Psi)\u0060` "CapitalPsi" iA
+\[CapitalPsi]
+endsnippet
+snippet `\u0060(O|W|Omega)\u0060` "CapitalOmega" iA
+\[CapitalOmega]
+endsnippet
+snippet `\u0060(Di|Digamma)\u0060` "CapitalDigamma" iA
+\[CapitalDigamma]
+endsnippet
+snippet `\u0060(Ko|Koppa)\u0060` "CapitalKoppa" iA
+\[CapitalKoppa]
+endsnippet
+snippet `\u0060(Sti|Stigma)\u0060` "CapitalStigma" iA
+\[CapitalStigma]
+endsnippet
+snippet `\u0060(Sa|Sampi)\u0060` "CapitalSampi" iA
+\[CapitalSampi]
+endsnippet
+# TODO: 需要考虑大小写转换问题
+snippet `\u0060`sc([a-z])`\u0060` "Script$1" iA
+\[Script$1]
+endsnippet
+snippet `\u0060`sc([A-Z])`\u0060` "ScriptCapital$1" iA
+\[ScriptCapital$1]
+endsnippet
+snippet `\u0060`go([a-z])`\u0060` "Gothic$1" iA
+\[Gothic$1]
+endsnippet
+snippet `\u0060`go([A-Z])`\u0060` "GothicCapital$1" iA
+\[GothicCapital$1]
+endsnippet
+snippet `\u0060`ds([a-z])`\u0060` "DoubleStruck$1" iA
+\[DoubleStruck$1]
+endsnippet
+snippet `\u0060`ds([0-9])`\u0060` "DoubleStruck$1" iA
+\[DoubleStruck$1]
+endsnippet
+snippet `\u0060`ds([A-Z])`\u0060` "DoubleStruckCapital$1" iA
+\[DoubleStruckCapital$1]
+endsnippet
+snippet `\u0060`wp([a-z])`\u0060` "Weierstrass$1" iA
+\[Weierstrass$1]
+endsnippet
+snippet `\u0060`$([a-z])`\u0060` "Formal$1" iA
+\[Formal$1]
+endsnippet
+snippet `\u0060`$([A-Z])`\u0060` "FormalCapital$1" iA
+\[FormalCapital$1]
+endsnippet
+snippet `\u0060go0\u0060` "GothicZero" iA
+\[GothicZero]
+endsnippet
+snippet `\u0060go1\u0060` "GothicOne" iA
+\[GothicOne]
+endsnippet
+snippet `\u0060go2\u0060` "GothicTwo" iA
+\[GothicTwo]
+endsnippet
+snippet `\u0060go3\u0060` "GothicThree" iA
+\[GothicThree]
+endsnippet
+snippet `\u0060go4\u0060` "GothicFour" iA
+\[GothicFour]
+endsnippet
+snippet `\u0060go5\u0060` "GothicFive" iA
+\[GothicFive]
+endsnippet
+snippet `\u0060go6\u0060` "GothicSix" iA
+\[GothicSix]
+endsnippet
+snippet `\u0060go7\u0060` "GothicSeven" iA
+\[GothicSeven]
+endsnippet
+snippet `\u0060go8\u0060` "GothicEight" iA
+\[GothicEight]
+endsnippet
+snippet `\u0060go9\u0060` "GothicNine" iA
+\[GothicNine]
+endsnippet
+snippet `\u0060sc0\u0060` "ScriptZero" iA
+\[ScriptZero]
+endsnippet
+snippet `\u0060sc1\u0060` "ScriptOne" iA
+\[ScriptOne]
+endsnippet
+snippet `\u0060sc2\u0060` "ScriptTwo" iA
+\[ScriptTwo]
+endsnippet
+snippet `\u0060sc3\u0060` "ScriptThree" iA
+\[ScriptThree]
+endsnippet
+snippet `\u0060sc4\u0060` "ScriptFour" iA
+\[ScriptFour]
+endsnippet
+snippet `\u0060sc5\u0060` "ScriptFive" iA
+\[ScriptFive]
+endsnippet
+snippet `\u0060sc6\u0060` "ScriptSix" iA
+\[ScriptSix]
+endsnippet
+snippet `\u0060sc7\u0060` "ScriptSeven" iA
+\[ScriptSeven]
+endsnippet
+snippet `\u0060sc8\u0060` "ScriptEight" iA
+\[ScriptEight]
+endsnippet
+snippet `\u0060sc9\u0060` "ScriptNine" iA
+\[ScriptNine]
+endsnippet
+## 英语字母的不同形式
+snippet `\u0060scl\u0060` "ScriptL" iA
+\[ScriptL]
+endsnippet
+snippet `\u0060scE\u0060` "ScriptCapitalE" iA
+\[ScriptCapitalE]
+endsnippet
+snippet `\u0060scH\u0060` "ScriptCapitalH" iA
+\[ScriptCapitalH]
+endsnippet
+snippet `\u0060scL\u0060` "ScriptCapitalL" iA
+\[ScriptCapitalL]
+endsnippet
+snippet `\u0060goC\u0060` "GothicCapitalC" iA
+\[GothicCapitalC]
+endsnippet
+snippet `\u0060goH\u0060` "GothicCapitalH" iA
+\[GothicCapitalH]
+endsnippet
+snippet `\u0060goI\u0060` "GothicCapitalI" iA
+\[GothicCapitalI]
+endsnippet
+snippet `\u0060goR\u0060` "GothicCapitalR" iA
+\[GothicCapitalR]
+endsnippet
+snippet `\u0060dsC\u0060` "DoubleStruckCapitalC" iA
+\[DoubleStruckCapitalC]
+endsnippet
+snippet `\u0060dsR\u0060` "DoubleStruckCapitalR" iA
+\[DoubleStruckCapitalR]
+endsnippet
+snippet `\u0060dsQ\u0060` "DoubleStruckCapitalQ" iA
+\[DoubleStruckCapitalQ]
+endsnippet
+snippet `\u0060dsZ\u0060` "DoubleStruckCapitalZ" iA
+\[DoubleStruckCapitalZ]
+endsnippet
+snippet `\u0060dsN\u0060` "DoubleStruckCapitalN" iA
+\[DoubleStruckCapitalN]
+endsnippet
+snippet `\u0060wp\u0060` "WeierstrassP" iA
+\[WeierstrassP]
+endsnippet
+## 希伯来字母
+snippet `\u0060al\u0060` "Aleph" iA
+\[Aleph]
+endsnippet
+snippet `\u0060da\u0060` "Dalet" iA
+\[Dalet]
+endsnippet
+## 单位和类似字母的数学符号
+snippet `\u0060mi\u0060` "Micro" iA
+\[Micro]
+endsnippet
+snippet `\u0060mho\u0060` "Mho" iA
+\[Mho]
+endsnippet
+snippet `\u0060Ang\u0060` "Angstrom" iA
+\[Angstrom]
+endsnippet
+snippet `\u0060hb\u0060` "HBar" iA
+\[HBar]
+endsnippet
+snippet `\u0060cent\u0060` "Cent" iA
+\[Cent]
+endsnippet
+snippet `\u0060euro\u0060` "Euro" iA
+\[Euro]
+endsnippet
+snippet `\u0060deg\u0060` "Degree" iA
+\[Degree]
+endsnippet
+snippet `\u0060es\u0060` "EmptySet" iA
+\[EmptySet]
+endsnippet
+snippet `\u0060inf\u0060` "Infinity" iA
+\[Infinity]
+endsnippet
+snippet `\u0060ee\u0060` "ExponentialE" iA
+\[ExponentialE]
+endsnippet
+snippet `\u0060ii\u0060` "ImaginaryI" iA
+\[ImaginaryI]
+endsnippet
+snippet `\u0060jj\u0060` "ImaginaryJ" iA
+\[ImaginaryJ]
+endsnippet
+snippet `\u0060pp\u0060` "DoubledPi" iA
+\[DoubledPi]
+endsnippet
+snippet `\u0060gg\u0060` "DoubledGamma" iA
+\[DoubledGamma]
+endsnippet
+snippet `\u0060pd\u0060` "PartialD" iA
+\[PartialD]
+endsnippet
+snippet `\u0060dd\u0060` "DifferentialD" iA
+\[DifferentialD]
+endsnippet
+snippet `\u0060DD\u0060` "CapitalDifferentialD" iA
+\[CapitalDifferentialD]
+endsnippet
+snippet `\u0060del\u0060` "Del" iA
+\[Del]
+endsnippet
+snippet `\u0060diffd\u0060` "DifferenceDelta" iA
+\[DifferenceDelta]
+endsnippet
+snippet `\u0060sum\u0060` "Sum" iA
+\[Sum]
+endsnippet
+snippet `\u0060prod\u0060` "Product" iA
+\[Product]
+endsnippet
+snippet `\u0060tr\u0060` "Transpose" iA
+\[Transpose]
+endsnippet
+snippet `\u0060hc\u0060` "HermitianConjugate" iA
+\[HermitianConjugate]
+endsnippet
+snippet `\u0060shift\u0060` "DiscreteShift" iA
+\[DiscreteShift]
+endsnippet
+snippet `\u0060dratio\u0060` "DiscreteRatio" iA
+\[DiscreteRatio]
+endsnippet
+## 形状、图标和几何结构
+snippet `\u0060fvssq\u0060` "FilledVerySmallSquare" iA
+\[FilledVerySmallSquare]
+endsnippet
+snippet `\u0060essq\u0060` "EmptySmallSquare" iA
+\[EmptySmallSquare]
+endsnippet
+snippet `\u0060fssq\u0060` "FilledSmallSquare" iA
+\[FilledSmallSquare]
+endsnippet
+snippet `\u0060esq\u0060` "EmptySquare" iA
+\[EmptySquare]
+endsnippet
+snippet `\u0060gsq\u0060` "GraySquare" iA
+\[GraySquare]
+endsnippet
+snippet `\u0060fsq\u0060` "FilledSquare" iA
+\[FilledSquare]
+endsnippet
+snippet `\u0060esci\u0060` "EmptySmallCircle" iA
+\[EmptySmallCircle]
+endsnippet
+snippet `\u0060fsci\u0060` "FilledSmallCircle" iA
+\[FilledSmallCircle]
+endsnippet
+snippet `\u0060eci\u0060` "EmptyCircle" iA
+\[EmptyCircle]
+endsnippet
+snippet `\u0060gci\u0060` "GrayCircle" iA
+\[GrayCircle]
+endsnippet
+snippet `\u0060fci\u0060` "FilledCircle" iA
+\[FilledCircle]
+endsnippet
+snippet `\u0060\*5\u0060` "FivePointedStar" iA
+\[FivePointedStar]
+endsnippet
+snippet `\u0060\*6\u0060` "SixPointedStar" iA
+\[SixPointedStar]
+endsnippet
+snippet `\u0060math\u0060` "MathematicaIcon" iA
+\[MathematicaIcon]
+endsnippet
+snippet `\u0060(:\)|:\-\))\u0060` "HappySmiley" iA
+\[HappySmiley]
+endsnippet
+# TODO: Use `\` for quotes and \ to prevent error
+snippet `\u0060:\-\|\u0060` "NeutralSmiley" iA
+\[NeutralSmiley]
+endsnippet
+snippet `\u0060:\-\(\u0060` "SadSmiley" iA
+\[SadSmiley]
+endsnippet
+snippet `\u0060:\-@\u0060` "FreakedSmiley" iA
+\[FreakedSmiley]
+endsnippet
+snippet `\u0060(wf|wolf|howl|tungsten|werewolf)\u0060` "Wolf" iA
+\[Wolf]
+endsnippet
+## 文本元素
+snippet `\u0060\-\u0060` "Dash" iA
+\[Dash]
+endsnippet
+snippet `\u0060\-\-\u0060` "LongDash" iA
+\[LongDash]
+endsnippet
+snippet `\u0060bu\u0060` "Bullet" iA
+\[Bullet]
+endsnippet
+snippet `\u0060d?\u0060` "DownQuestion" iA
+\[DownQuestion]
+endsnippet
+snippet `\u0060d\!\u0060` "DownExclamation" iA
+\[DownExclamation]
+endsnippet
+snippet `\u0060'\u0060` "Prime" iA
+\[Prime]
+endsnippet
+snippet `\u0060''\u0060` "DoublePrime" iA
+\[DoublePrime]
+endsnippet
+snippet `\u0060`\u0060` "ReversePrime" iA
+\[ReversePrime]
+endsnippet
+snippet `\u0060``\u0060` "ReverseDoublePrime" iA
+\[ReverseDoublePrime]
+endsnippet
+snippet `\u0060g<<\u0060` "LeftGuillemet" iA
+\[LeftGuillemet]
+endsnippet
+snippet `\u0060g>>\u0060` "RightGuillemet" iA
+\[RightGuillemet]
+endsnippet
+snippet `\u0060\.\.\.\u0060` "Ellipsis" iA
+\[Ellipsis]
+endsnippet
+snippet `\u0060bbishop\u0060` "BlackBishop" iA
+\[BlackBishop]
+endsnippet
+snippet `\u0060bking\u0060` "BlackKing" iA
+\[BlackKing]
+endsnippet
+snippet `\u0060bknight\u0060` "BlackKnight" iA
+\[BlackKnight]
+endsnippet
+snippet `\u0060bpawn\u0060` "BlackPawn" iA
+\[BlackPawn]
+endsnippet
+snippet `\u0060bqueen\u0060` "BlackQueen" iA
+\[BlackQueen]
+endsnippet
+snippet `\u0060brook\u0060` "BlackRook" iA
+\[BlackRook]
+endsnippet
+snippet `\u0060wbishop\u0060` "WhiteBishop" iA
+\[WhiteBishop]
+endsnippet
+snippet `\u0060wking\u0060` "WhiteKing" iA
+\[WhiteKing]
+endsnippet
+snippet `\u0060wknight\u0060` "WhiteKnight" iA
+\[WhiteKnight]
+endsnippet
+snippet `\u0060wpawn\u0060` "WhitePawn" iA
+\[WhitePawn]
+endsnippet
+snippet `\u0060wqueen\u0060` "WhiteQueen" iA
+\[WhiteQueen]
+endsnippet
+snippet `\u0060wrook\u0060` "WhiteRook" iA
+\[WhiteRook]
+endsnippet
+snippet `\u0060dg\u0060` "Dagger" iA
+\[Dagger]
+endsnippet
+snippet `\u0060ddg\u0060` "DoubleDagger" iA
+\[DoubleDagger]
+endsnippet
+snippet `\u0060u\(\u0060` "UnderParenthesis" iA
+\[UnderParenthesis]
+endsnippet
+snippet `\u0060o\(\u0060` "OverParenthesis" iA
+\[OverParenthesis]
+endsnippet
+snippet `\u0060u\[\u0060` "UnderBracket" iA
+\[UnderBracket]
+endsnippet
+snippet `\u0060o\[\u0060` "OverBracket" iA
+\[OverBracket]
+endsnippet
+snippet `\u0060u\{\u0060` "UnderBrace" iA
+\[UnderBrace]
+endsnippet
+snippet `\u0060o\{\u0060` "OverBrace" iA
+\[OverBrace]
+endsnippet
+snippet `\u0060hline\u0060` "HorizontalLine" iA
+\[HorizontalLine]
+endsnippet
+snippet `\u0060vline\u0060` "VerticalLine" iA
+\[VerticalLine]
+endsnippet
+snippet `\u0060\.\.\.\u0060` "Ellipsis" iA
+\[Ellipsis]
+endsnippet
+## 扩充的拉丁字母
+# TODO: Fix This
+snippet `\u0060a"\u0060` "ADoubleDot" iA
+\[ADoubleDot]
+endsnippet
+snippet `\u0060e"\u0060` "EDoubleDot" iA
+\[EDoubleDot]
+endsnippet
+snippet `\u0060i"\u0060` "IDoubleDot" iA
+\[IDoubleDot]
+endsnippet
+snippet `\u0060o"\u0060` "ODoubleDot" iA
+\[ODoubleDot]
+endsnippet
+snippet `\u0060u"\u0060` "UDoubleDot" iA
+\[UDoubleDot]
+endsnippet
+snippet `\u0060y"\u0060` "YDoubleDot" iA
+\[YDoubleDot]
+endsnippet
+snippet `\u0060A"\u0060` "CapitalADoubleDot" iA
+\[CapitalADoubleDot]
+endsnippet
+snippet `\u0060E"\u0060` "CapitalEDoubleDot" iA
+\[CapitalEDoubleDot]
+endsnippet
+snippet `\u0060I"\u0060` "CapitalIDoubleDot" iA
+\[CapitalIDoubleDot]
+endsnippet
+snippet `\u0060O"\u0060` "CapitalODoubleDot" iA
+\[CapitalODoubleDot]
+endsnippet
+snippet `\u0060U"\u0060` "CapitalUDoubleDot" iA
+\[CapitalUDoubleDot]
+endsnippet
+snippet `\u0060a`\u0060` "AGrave" iA
+\[AGrave]
+endsnippet
+snippet `\u0060a'\u0060` "AAcute" iA
+\[AAcute]
+endsnippet
+snippet `\u0060a\^\u0060` "AHat" iA
+\[AHat]
+endsnippet
+snippet `\u0060a~\u0060` "ATilde" iA
+\[ATilde]
+endsnippet
+snippet `\u0060ao\u0060` "ARing" iA
+\[ARing]
+endsnippet
+snippet `\u0060a\-\u0060` "ABar" iA
+\[ABar]
+endsnippet
+snippet `\u0060au\u0060` "ACup" iA
+\[ACup]
+endsnippet
+snippet `\u0060ae\u0060` "AE" iA
+\[AE]
+endsnippet
+snippet `\u0060c'\u0060` "CAcute" iA
+\[CAcute]
+endsnippet
+snippet `\u0060c,\u0060` "CCedilla" iA
+\[CCedilla]
+endsnippet
+snippet `\u0060cv\u0060` "CHacek" iA
+\[CHacek]
+endsnippet
+snippet `\u0060e`\u0060` "EGrave" iA
+\[EGrave]
+endsnippet
+snippet `\u0060e'\u0060` "EAcute" iA
+\[EAcute]
+endsnippet
+snippet `\u0060e\-\u0060` "EBar" iA
+\[EBar]
+endsnippet
+snippet `\u0060e\^\u0060` "EHat" iA
+\[EHat]
+endsnippet
+snippet `\u0060eu\u0060` "ECup" iA
+\[ECup]
+endsnippet
+snippet `\u0060i`\u0060` "IGrave" iA
+\[IGrave]
+endsnippet
+snippet `\u0060i'\u0060` "IAcute" iA
+\[IAcute]
+endsnippet
+snippet `\u0060i\^\u0060` "IHat" iA
+\[IHat]
+endsnippet
+snippet `\u0060iu\u0060` "ICup" iA
+\[ICup]
+endsnippet
+snippet `\u0060d\-\u0060` "Eth" iA
+\[Eth]
+endsnippet
+snippet `\u0060l/\u0060` "LSlash" iA
+\[LSlash]
+endsnippet
+snippet `\u0060n~\u0060` "NTilde" iA
+\[NTilde]
+endsnippet
+snippet `\u0060o`\u0060` "OGrave" iA
+\[OGrave]
+endsnippet
+snippet `\u0060o'\u0060` "OAcute" iA
+\[OAcute]
+endsnippet
+snippet `\u0060o\^\u0060` "OHat" iA
+\[OHat]
+endsnippet
+snippet `\u0060o~\u0060` "OTilde" iA
+\[OTilde]
+endsnippet
+snippet `\u0060o''\u0060` "ODoubleAcute" iA
+\[ODoubleAcute]
+endsnippet
+snippet `\u0060o/\u0060` "OSlash" iA
+\[OSlash]
+endsnippet
+snippet `\u0060oe\u0060` "OE" iA
+\[OE]
+endsnippet
+snippet `\u0060sv\u0060` "SHacek" iA
+\[SHacek]
+endsnippet
+snippet `\u0060u`\u0060` "UGrave" iA
+\[UGrave]
+endsnippet
+snippet `\u0060u'\u0060` "UAcute" iA
+\[UAcute]
+endsnippet
+snippet `\u0060u\^\u0060` "UHat" iA
+\[UHat]
+endsnippet
+snippet `\u0060u''\u0060` "UDoubleAcute" iA
+\[UDoubleAcute]
+endsnippet
+snippet `\u0060y'\u0060` "YAcute" iA
+\[YAcute]
+endsnippet
+snippet `\u0060thn\u0060` "Thorn" iA
+\[Thorn]
+endsnippet
+snippet `\u0060(sz|ss)\u0060` "SZ" iA
+\[SZ]
+endsnippet
+snippet `\u0060A`\u0060` "CapitalAGrave" iA
+\[CapitalAGrave]
+endsnippet
+snippet `\u0060A'\u0060` "CapitalAAcute" iA
+\[CapitalAAcute]
+endsnippet
+snippet `\u0060A\^\u0060` "CapitalAHat" iA
+\[CapitalAHat]
+endsnippet
+snippet `\u0060A~\u0060` "CapitalATilde" iA
+\[CapitalATilde]
+endsnippet
+snippet `\u0060Ao\u0060` "CapitalARing" iA
+\[CapitalARing]
+endsnippet
+snippet `\u0060A\-\u0060` "CapitalABar" iA
+\[CapitalABar]
+endsnippet
+snippet `\u0060Au\u0060` "CapitalACup" iA
+\[CapitalACup]
+endsnippet
+snippet `\u0060AE\u0060` "CapitalAE" iA
+\[CapitalAE]
+endsnippet
+snippet `\u0060C'\u0060` "CapitalCAcute" iA
+\[CapitalCAcute]
+endsnippet
+snippet `\u0060C,\u0060` "CapitalCCedilla" iA
+\[CapitalCCedilla]
+endsnippet
+snippet `\u0060Cv\u0060` "CapitalCHacek" iA
+\[CapitalCHacek]
+endsnippet
+snippet `\u0060E`\u0060` "CapitalEGrave" iA
+\[CapitalEGrave]
+endsnippet
+snippet `\u0060E'\u0060` "CapitalEAcute" iA
+\[CapitalEAcute]
+endsnippet
+snippet `\u0060E\-\u0060` "CapitalEBar" iA
+\[CapitalEBar]
+endsnippet
+snippet `\u0060E\^\u0060` "CapitalEHat" iA
+\[CapitalEHat]
+endsnippet
+snippet `\u0060Eu\u0060` "CapitalECup" iA
+\[CapitalECup]
+endsnippet
+snippet `\u0060I`\u0060` "CapitalIGrave" iA
+\[CapitalIGrave]
+endsnippet
+snippet `\u0060I'\u0060` "CapitalIAcute" iA
+\[CapitalIAcute]
+endsnippet
+snippet `\u0060I\^\u0060` "CapitalIHat" iA
+\[CapitalIHat]
+endsnippet
+snippet `\u0060Iu\u0060` "CapitalICup" iA
+\[CapitalICup]
+endsnippet
+snippet `\u0060D\-\u0060` "CapitalEth" iA
+\[CapitalEth]
+endsnippet
+snippet `\u0060L/\u0060` "CapitalLSlash" iA
+\[CapitalLSlash]
+endsnippet
+snippet `\u0060N~\u0060` "CapitalNTilde" iA
+\[CapitalNTilde]
+endsnippet
+snippet `\u0060O`\u0060` "CapitalOGrave" iA
+\[CapitalOGrave]
+endsnippet
+snippet `\u0060O'\u0060` "CapitalOAcute" iA
+\[CapitalOAcute]
+endsnippet
+snippet `\u0060O\^\u0060` "CapitalOHat" iA
+\[CapitalOHat]
+endsnippet
+snippet `\u0060O~\u0060` "CapitalOTilde" iA
+\[CapitalOTilde]
+endsnippet
+snippet `\u0060O''\u0060` "CapitalODoubleAcute" iA
+\[CapitalODoubleAcute]
+endsnippet
+snippet `\u0060O/\u0060` "CapitalOSlash" iA
+\[CapitalOSlash]
+endsnippet
+snippet `\u0060OE\u0060` "CapitalOE" iA
+\[CapitalOE]
+endsnippet
+snippet `\u0060Sv\u0060` "CapitalSHacek" iA
+\[CapitalSHacek]
+endsnippet
+snippet `\u0060U`\u0060` "CapitalUGrave" iA
+\[CapitalUGrave]
+endsnippet
+snippet `\u0060U'\u0060` "CapitalUAcute" iA
+\[CapitalUAcute]
+endsnippet
+snippet `\u0060U\^\u0060` "CapitalUHat" iA
+\[CapitalUHat]
+endsnippet
+snippet `\u0060U''\u0060` "CapitalUDoubleAcute" iA
+\[CapitalUDoubleAcute]
+endsnippet
+snippet `\u0060Y'\u0060` "CapitalYAcute" iA
+\[CapitalYAcute]
+endsnippet
+snippet `\u0060Thn\u0060` "CapitalThorn" iA
+\[CapitalThorn]
+endsnippet
+# 算符
+## 基本数学算符
+snippet `\u0060sqrt\u0060` "Sqrt" iA
+\[Sqrt]
+endsnippet
+snippet `\u0060cbrti\u0060` "CubeRoot" iA
+\[CubeRoot]
+endsnippet
+snippet `\u0060cross\u0060` "Cross" iA
+\[Cross]
+endsnippet
+snippet `\u0060\+\-\u0060` "PlusMinus" iA
+\[PlusMinus]
+endsnippet
+snippet `\u0060\-\+\u0060` "MinusPlus" iA
+\[MinusPlus]
+endsnippet
+snippet `\u0060div\u0060` "÷" iA
+÷
+endsnippet
+snippet `\u0060times\u0060` "*" iA
+\*
+endsnippet
+## 微积分和代数中的算符
+snippet `\u0060lim\u0060` "Limit" iA
+\[Limit]
+endsnippet
+snippet `\u0060Mlim\u0060` "MaxLimit" iA
+\[MaxLimit]
+endsnippet
+snippet `\u0060mlim\u0060` "MinLimit" iA
+\[MinLimit]
+endsnippet
+snippet `\u0060del\u0060` "Del" iA
+\[Del]
+endsnippet
+snippet `\u0060pd\u0060` "PartialD" iA
+\[PartialD]
+endsnippet
+snippet `\u0060dd\u0060` "DifferentialD" iA
+\[DifferentialD]
+endsnippet
+snippet `\u0060sum\u0060` "Sum" iA
+\[Sum]
+endsnippet
+snippet `\u0060prod\u0060` "Product" iA
+\[Product]
+endsnippet
+snippet `\u0060int\u0060` "Integral" iA
+\[Integral]
+endsnippet
+snippet `\u0060cint\u0060` "ContourIntegral" iA
+\[ContourIntegral]
+endsnippet
+snippet `\u0060cccint\u0060` "CounterClockwiseContourIntegral" iA
+\[CounterClockwiseContourIntegral]
+endsnippet
+snippet `\u0060ccint\u0060` "ClockwiseContourIntegral" iA
+\[ClockwiseContourIntegral]
+endsnippet
+snippet `\u0060(co|conj)\u0060` "Conjugate" iA
+\[Conjugate]
+endsnippet
+snippet `\u0060tr\u0060` "Transpose" iA
+\[Transpose]
+endsnippet
+snippet `\u0060ct\u0060` "ConjugateTranspose" iA
+\[ConjugateTranspose]
+endsnippet
+snippet `\u0060hc\u0060` "HermitianConjugate" iA
+\[HermitianConjugate]
+endsnippet
+## 逻辑和其他联结
+snippet `\u0060(&&|and)\u0060` "And" iA
+\[And]
+endsnippet
+snippet `\u0060(|||or)\u0060` "Or" iA
+\[Or]
+endsnippet
+snippet `\u0060(\!|not)\u0060` "Not" iA
+\[Not]
+endsnippet
+snippet `\u0060el\u0060` "Element" iA
+\[Element]
+endsnippet
+snippet `\u0060fa\u0060` "ForAll" iA
+\[ForAll]
+endsnippet
+snippet `\u0060ex\u0060` "Exists" iA
+\[Exists]
+endsnippet
+snippet `\u0060\!ex\u0060` "NotExists" iA
+\[NotExists]
+endsnippet
+snippet `\u0060xor\u0060` "Xor" iA
+\[Xor]
+endsnippet
+snippet `\u0060xnor\u0060` "Xnor" iA
+\[Xnor]
+endsnippet
+snippet `\u0060nand\u0060` "Nand" iA
+\[Nand]
+endsnippet
+snippet `\u0060nor\u0060` "Nor" iA
+\[Nor]
+endsnippet
+snippet `\u0060=>\u0060` "Implies" iA
+\[Implies]
+endsnippet
+snippet `\u0060tf\u0060` "Therefore" iA
+\[Therefore]
+endsnippet
+snippet `\u0060st\u0060` "SuchThat" iA
+\[SuchThat]
+endsnippet
+snippet `\u0060\|\u0060` "VerticalSeparator" iA
+\[VerticalSeparator]
+endsnippet
+snippet `\u0060:\u0060` "Colon" iA
+\[Colon]
+endsnippet
+## 表示行为的算符
+snippet `\u0060sc\u0060` "SmallCircle" iA
+\[SmallCircle]
+endsnippet
+snippet `\u0060c\+\u0060` "CirclePlus" iA
+\[CirclePlus]
+endsnippet
+snippet `\u0060c\-\u0060` "CircleMinus" iA
+\[CircleMinus]
+endsnippet
+snippet `\u0060c\*\u0060` "CircleTimes" iA
+\[CircleTimes]
+endsnippet
+snippet `\u0060c\.\u0060` "CircleDot" iA
+\[CircleDot]
+endsnippet
+snippet `\u0060dia\u0060` "Diamond" iA
+\[Diamond]
+endsnippet
+snippet `\u0060\.\u0060` "CenterDot" iA
+\[CenterDot]
+endsnippet
+snippet `\u0060star\u0060` "Star" iA
+\[Star]
+endsnippet
+snippet `\u0060\\u0060` "Backslash" iA
+\[Backslash]
+endsnippet
+snippet `\u0060\^\u0060` "Wedge" iA
+\[Wedge]
+endsnippet
+snippet `\u0060v\u0060` "Vee" iA
+\[Vee]
+endsnippet
+snippet `\u0060un\u0060` "Union" iA
+\[Union]
+endsnippet
+snippet `\u0060inter\u0060` "Intersection" iA
+\[Intersection]
+endsnippet
+snippet `\u0060coprod\u0060` "Coproduct" iA
+\[Coproduct]
+endsnippet
+snippet `\u0060sq\u0060` "Square" iA
+\[Square]
+endsnippet
+## 括号算符
+snippet `\u0060lf\u0060` "LeftFloor" iA
+\[LeftFloor]
+endsnippet
+snippet `\u0060rf\u0060` "RightFloor" iA
+\[RightFloor]
+endsnippet
+snippet `\u0060lc\u0060` "LeftCeiling" iA
+\[LeftCeiling]
+endsnippet
+snippet `\u0060rc\u0060` "RightCeiling" iA
+\[RightCeiling]
+endsnippet
+snippet `\u0060\[\[\u0060` "LeftDoubleBracket" iA
+\[LeftDoubleBracket]
+endsnippet
+snippet `\u0060\]\]\u0060` "RightDoubleBracket" iA
+\[RightDoubleBracket]
+endsnippet
+snippet `\u0060<\u0060` "LeftAngleBracket" iA
+\[LeftAngleBracket]
+endsnippet
+snippet `\u0060>\u0060` "RightAngleBracket" iA
+\[RightAngleBracket]
+endsnippet
+snippet `\u0060l\|\u0060` "LeftBracketingBar" iA
+\[LeftBracketingBar]
+endsnippet
+snippet `\u0060r\|\u0060` "RightBracketingBar" iA
+\[RightBracketingBar]
+endsnippet
+snippet `\u0060l\|\|\u0060` "LeftDoubleBracketingBar" iA
+\[LeftDoubleBracketingBar]
+endsnippet
+snippet `\u0060r\|\|\u0060` "RightDoubleBracketingBar" iA
+\[RightDoubleBracketingBar]
+endsnippet
+## 表示关系的算符
+snippet `\u0060==\u0060` "Equal" iA
+\[Equal]
+endsnippet
+snippet `\u0060l=\u0060` "LongEqual" iA
+\[LongEqual]
+endsnippet
+snippet `\u0060===\u0060` "Congruent" iA
+\[Congruent]
+endsnippet
+snippet `\u0060~\u0060` "Tilde" iA
+\[Tilde]
+endsnippet
+snippet `\u0060~~\u0060` "TildeTilde" iA
+\[TildeTilde]
+endsnippet
+snippet `\u0060~=\u0060` "TildeEqual" iA
+\[TildeEqual]
+endsnippet
+snippet `\u0060~==\u0060` "TildeFullEqual" iA
+\[TildeFullEqual]
+endsnippet
+snippet `\u0060=~\u0060` "EqualTilde" iA
+\[EqualTilde]
+endsnippet
+snippet `\u0060h=\u0060` "HumpEqual" iA
+\[HumpEqual]
+endsnippet
+snippet `\u0060\!=\u0060` "NotEqual" iA
+\[NotEqual]
+endsnippet
+snippet `\u0060\!===\u0060` "NotCongruent" iA
+\[NotCongruent]
+endsnippet
+snippet `\u0060\!~\u0060` "NotTilde" iA
+\[NotTilde]
+endsnippet
+snippet `\u0060\!~~\u0060` "NotTildeTilde" iA
+\[NotTildeTilde]
+endsnippet
+snippet `\u0060\!~=\u0060` "NotTildeEqual" iA
+\[NotTildeEqual]
+endsnippet
+snippet `\u0060\!~==\u0060` "NotTildeFullEqual" iA
+\[NotTildeFullEqual]
+endsnippet
+snippet `\u0060\!=~\u0060` "NotEqualTilde" iA
+\[NotEqualTilde]
+endsnippet
+snippet `\u0060\!h=\u0060` "NotHumpEqual" iA
+\[NotHumpEqual]
+endsnippet
+snippet `\u0060prop\u0060` "Proportional" iA
+\[Proportional]
+endsnippet
+snippet `\u0060>=\u0060` "GreaterEqual" iA
+\[GreaterEqual]
+endsnippet
+snippet `\u0060<=\u0060` "LessEqual" iA
+\[LessEqual]
+endsnippet
+snippet `\u0060>/\u0060` "GreaterSlantEqual" iA
+\[GreaterSlantEqual]
+endsnippet
+snippet `\u0060</\u0060` "LessSlantEqual" iA
+\[LessSlantEqual]
+endsnippet
+snippet `\u0060>~\u0060` "GreaterTilde" iA
+\[GreaterTilde]
+endsnippet
+snippet `\u0060<~\u0060` "LessTilde" iA
+\[LessTilde]
+endsnippet
+snippet `\u0060\!>=\u0060` "NotGreaterEqual" iA
+\[NotGreaterEqual]
+endsnippet
+snippet `\u0060\!<=\u0060` "NotLessEqual" iA
+\[NotLessEqual]
+endsnippet
+snippet `\u0060\!>/\u0060` "NotGreaterSlantEqual" iA
+\[NotGreaterSlantEqual]
+endsnippet
+snippet `\u0060\!</\u0060` "NotLessSlantEqual" iA
+\[NotLessSlantEqual]
+endsnippet
+snippet `\u0060\!>~\u0060` "NotGreaterTilde" iA
+\[NotGreaterTilde]
+endsnippet
+snippet `\u0060\!<~\u0060` "NotLessTilde" iA
+\[NotLessTilde]
+endsnippet
+snippet `\u0060\!>\u0060` "NotGreater" iA
+\[NotGreater]
+endsnippet
+snippet `\u0060\!<\u0060` "NotLess" iA
+\[NotLess]
+endsnippet
+snippet `\u0060sub\u0060` "Subset" iA
+\[Subset]
+endsnippet
+snippet `\u0060sup\u0060` "Superset" iA
+\[Superset]
+endsnippet
+snippet `\u0060sub=\u0060` "SubsetEqual" iA
+\[SubsetEqual]
+endsnippet
+snippet `\u0060sup=\u0060` "SupersetEqual" iA
+\[SupersetEqual]
+endsnippet
+snippet `\u0060el\u0060` "Element" iA
+\[Element]
+endsnippet
+snippet `\u0060mem\u0060` "ReverseElement" iA
+\[ReverseElement]
+endsnippet
+snippet `\u0060\!sub\u0060` "NotSubset" iA
+\[NotSubset]
+endsnippet
+snippet `\u0060\!sup\u0060` "NotSuperset" iA
+\[NotSuperset]
+endsnippet
+snippet `\u0060\!sub=\u0060` "NotSubsetEqual" iA
+\[NotSubsetEqual]
+endsnippet
+snippet `\u0060\!sup=\u0060` "NotSupersetEqual" iA
+\[NotSupersetEqual]
+endsnippet
+snippet `\u0060\!el\u0060` "NotElement" iA
+\[NotElement]
+endsnippet
+snippet `\u0060\!mem\u0060` "NotReverseElement" iA
+\[NotReverseElement]
+endsnippet
+snippet `\u0060\|\u0060` "VerticalBar" iA
+\[VerticalBar]
+endsnippet
+snippet `\u0060\|\|\u0060` "DoubleVerticalBar" iA
+\[DoubleVerticalBar]
+endsnippet
+snippet `\u0060\!\|\u0060` "NotVerticalBar" iA
+\[NotVerticalBar]
+endsnippet
+snippet `\u0060\!\|\|\u0060` "NotDoubleVerticalBar" iA
+\[NotDoubleVerticalBar]
+endsnippet
+## 基于箭头和向量的算符
+snippet `\u0060\->\u0060` "Rule" iA
+\[Rule]
+endsnippet
+snippet `\u0060:>\u0060` "RuleDelayed" iA
+\[RuleDelayed]
+endsnippet
+snippet `\u0060=>\u0060` "Implies" iA
+\[Implies]
+endsnippet
+snippet `\u0060\->\u0060` "RightArrow" iA
+\[RightArrow]
+endsnippet
+snippet `\u0060<\-\u0060` "LeftArrow" iA
+\[LeftArrow]
+endsnippet
+snippet `\u0060<\->\u0060` "LeftRightArrow" iA
+\[LeftRightArrow]
+endsnippet
+snippet `\u0060\-\->\u0060` "LongRightArrow" iA
+\[LongRightArrow]
+endsnippet
+snippet `\u0060<\-\-\u0060` "LongLeftArrow" iA
+\[LongLeftArrow]
+endsnippet
+snippet `\u0060<\-\->\u0060` "LongLeftRightArrow" iA
+\[LongLeftRightArrow]
+endsnippet
+snippet `\u0060=>\u0060` "DoubleRightArrow" iA
+\[DoubleRightArrow]
+endsnippet
+snippet `\u0060<=\u0060` "DoubleLeftArrow" iA
+\[DoubleLeftArrow]
+endsnippet
+snippet `\u0060<=>\u0060` "DoubleLeftRightArrow" iA
+\[DoubleLeftRightArrow]
+endsnippet
+snippet `\u0060==>\u0060` "DoubleLongRightArrow" iA
+\[DoubleLongRightArrow]
+endsnippet
+snippet `\u0060<==\u0060` "DoubleLongLeftArrow" iA
+\[DoubleLongLeftArrow]
+endsnippet
+snippet `\u0060<==>\u0060` "DoubleLongLeftRightArrow" iA
+\[DoubleLongLeftRightArrow]
+endsnippet
+snippet `\u0060vec\u0060` "RightVector" iA
+\[RightVector]
+endsnippet
+snippet `\u0060equi\u0060` "Equilibrium" iA
+\[Equilibrium]
+endsnippet
+snippet `\u0060rT\u0060` "RightTee" iA
+\[RightTee]
+endsnippet
+snippet `\u0060lT\u0060` "LeftTee" iA
+\[LeftTee]
+endsnippet
+snippet `\u0060uT\u0060` "UpTee" iA
+\[UpTee]
+endsnippet
+snippet `\u0060dT\u0060` "DownTee" iA
+\[DownTee]
+endsnippet
+# 结构元素和键盘字符
+snippet `\u0060(|)\u0060` "InvisibleComma" iA
+\[InvisibleComma]
+endsnippet
+snippet `\u0060@\u0060` "InvisibleApplication" iA
+\[InvisibleApplication]
+endsnippet
+snippet `\u0060is\u0060` "InvisibleSpace" iA
+\[InvisibleSpace]
+endsnippet
+snippet `\u0060\+\u0060` "ImplicitPlus" iA
+\[ImplicitPlus]
+endsnippet
+snippet `\u0060am\u0060` "AlignmentMarker" iA
+\[AlignmentMarker]
+endsnippet
+snippet `\u0060nb\u0060` "NoBreak" iA
+\[NoBreak]
+endsnippet
+snippet `\u0060null\u0060` "Null" iA
+\[Null]
+endsnippet
+snippet `\u0060\u0060` "VeryThinSpace" iA
+\[VeryThinSpace]
+endsnippet
+snippet `\u0060\u0060` "ThinSpace" iA
+\[ThinSpace]
+endsnippet
+snippet `\u0060\u0060` "MediumSpace" iA
+\[MediumSpace]
+endsnippet
+snippet `\u0060\u0060` "ThickSpace" iA
+\[ThickSpace]
+endsnippet
+snippet `\u0060is\u0060` "InvisibleSpace" iA
+\[InvisibleSpace]
+endsnippet
+snippet `\u0060\-\u0060` "NegativeVeryThinSpace" iA
+\[NegativeVeryThinSpace]
+endsnippet
+snippet `\u0060\-\u0060` "NegativeThinSpace" iA
+\[NegativeThinSpace]
+endsnippet
+snippet `\u0060\-\u0060` "NegativeMediumSpace" iA
+\[NegativeMediumSpace]
+endsnippet
+snippet `\u0060\-\u0060` "NegativeThickSpace" iA
+\[NegativeThickSpace]
+endsnippet
+snippet `\u0060nbs\u0060` "NonBreakingSpace" iA
+\[NonBreakingSpace]
+endsnippet
+snippet `\u0060nl\u0060` "IndentingNewLine" iA
+\[IndentingNewLine]
+endsnippet
+snippet `\u0060spl\u0060` "SelectionPlaceholder" iA
+\[SelectionPlaceholder]
+endsnippet
+snippet `\u0060pl\u0060` "Placeholder" iA
+\[Placeholder]
+endsnippet
+snippet `\u0060space\u0060` "SpaceIndicator" iA
+\[SpaceIndicator]
+endsnippet
+snippet `\u0060ret\u0060` "ReturnIndicator" iA
+\[ReturnIndicator]
+endsnippet
+snippet `\u0060ret\u0060` "ReturnKey" iA
+\[ReturnKey]
+endsnippet
+snippet `\u0060ent\u0060` "EnterKey" iA
+\[EnterKey]
+endsnippet
+snippet `\u0060esc\u0060` "EscapeKey" iA
+\[EscapeKey]
+endsnippet
+snippet `\u0060esc\u0060` "AliasIndicator" iA
+\[AliasIndicator]
+endsnippet
+snippet `\u0060ctrl\u0060` "ControlKey" iA
+\[ControlKey]
+endsnippet
+snippet `\u0060cmd\u0060` "CommandKey" iA
+\[CommandKey]
+endsnippet
+snippet `\u0060\[\u0060` "LeftModified" iA
+\[LeftModified]
+endsnippet
+snippet `\u0060\]\u0060` "RightModified" iA
+\[RightModified]
+endsnippet
+snippet `\u0060cl\u0060` "CloverLeaf" iA
+\[CloverLeaf]
+endsnippet
+# 其他符号（根据字母表分类）
+snippet `\u0060aqua\u0060` "AquariusSign" iA
+\[AquariusSign]
+endsnippet
+snippet `\u0060aries\u0060` "AriesSign" iA
+\[AriesSign]
+endsnippet
+snippet `\u0060capri\u0060` "CapricornSign" iA
+\[CapricornSign]
+endsnippet
+snippet `\u0060cancer\u0060` "CancerSign" iA
+\[CancerSign]
+endsnippet
+snippet `\u0060libra\u0060` "LibraSign" iA
+\[LibraSign]
+endsnippet
+snippet `\u0060leo\u0060` "LeoSign" iA
+\[LeoSign]
+endsnippet
+snippet `\u0060sag\u0060` "SagittariusSign" iA
+\[SagittariusSign]
+endsnippet
+snippet `\u0060scor\u0060` "ScorpioSign" iA
+\[ScorpioSign]
+endsnippet
+snippet `\u0060taur\u0060` "TaurusSign" iA
+\[TaurusSign]
+endsnippet
+snippet `\u0060virgo\u0060` "VirgoSign" iA
+\[VirgoSign]
+endsnippet
+## 黄道十二宫
+snippet `\u0060alt\u0060` "AltKey" iA
+\[AltKey]
+endsnippet
+snippet `\u0060bv\u0060` "Breve" iA
+\[Breve]
+endsnippet
+snippet `\u0060cc\u0060` "ConstantC" iA
+\[ConstantC]
+endsnippet
+snippet `\u0060cd\u0060` "Cedilla" iA
+\[Cedilla]
+endsnippet
+snippet `\u0060cont\u0060` "Continuation" iA
+\[Continuation]
+endsnippet
+snippet `\u0060cond\u0060` "Conditioned" iA
+\[Conditioned]
+endsnippet
+snippet `\u0060dv\u0060` "DHacek" iA
+\[DHacek]
+endsnippet
+snippet `\u0060dhy\u0060` "DiscretionaryHyphen" iA
+\[DiscretionaryHyphen]
+endsnippet
+snippet `\u0060dpba\u0060` "DiscretionaryPageBreakAbove" iA
+\[DiscretionaryPageBreakAbove]
+endsnippet
+snippet `\u0060dpbb\u0060` "DiscretionaryPageBreakBelow" iA
+\[DiscretionaryPageBreakBelow]
+endsnippet
+snippet `\u0060dpsep\u0060` "DiscretionaryParagraphSeparator" iA
+\[DiscretionaryParagraphSeparator]
+endsnippet
+snippet `\u0060dlsep\u0060` "DiscretionaryLineSeparator" iA
+\[DiscretionaryLineSeparator]
+endsnippet
+snippet `\u0060dbv\u0060` "DownBreve" iA
+\[DownBreve]
+endsnippet
+snippet `\u0060ev\u0060` "EHacek" iA
+\[EHacek]
+endsnippet
+snippet `\u0060evssq\u0060` "EmptyVerySmallSquare" iA
+\[EmptyVerySmallSquare]
+endsnippet
+snippet `\u0060gi\u0060` "DoubledGamma" iA
+\[DoubledGamma]
+endsnippet
+snippet `\u0060gem\u0060` "GeminiSign" iA
+\[GeminiSign]
+endsnippet
+snippet `\u0060ls\u0060` "LetterSpace" iA
+\[LetterSpace]
+endsnippet
+snippet `\u0060hy\u0060` "-" iA
+\-
+endsnippet
+snippet `\u0060hck\u0060` "Hacek" iA
+\[Hacek]
+endsnippet
+snippet `\u0060i\-\u0060` "InvisiblePrefixScriptBase" iA
+\[InvisiblePrefixScriptBase]
+endsnippet
+snippet `\u0060kb\u0060` "KeyBar" iA
+\[KeyBar]
+endsnippet
+snippet `\u0060lsep\u0060` "LineSeparator" iA
+\[LineSeparator]
+endsnippet
+snippet `\u0060m1\u0060` "Mod1Key" iA
+\[Mod1Key]
+endsnippet
+snippet `\u0060m2\u0060` "Mod2Key" iA
+\[Mod2Key]
+endsnippet
+snippet `\u0060n,\u0060` "NumberComma" iA
+\[NumberComma]
+endsnippet
+snippet `\u0060nv\u0060` "NHacek" iA
+\[NHacek]
+endsnippet
+snippet `\u0060opt\u0060` "OptionalKey" iA
+\[OptionalKey]
+endsnippet
+snippet `\u0060psep\u0060` "ParagraphSeparator" iA
+\[ParagraphSeparator]
+endsnippet
+snippet `\u0060pbb\u0060` "PageBreakBelow" iA
+\[PageBreakBelow]
+endsnippet
+snippet `\u0060pba\u0060` "PageBreakAbove" iA
+\[PageBreakAbove]
+endsnippet
+snippet `\u0060rv\u0060` "RHacek" iA
+\[RHacek]
+endsnippet
+snippet `\u0060rtm\u0060` "RegisteredTrademark" iA
+\[RegisteredTrademark]
+endsnippet
+snippet `\u0060sh\u0060` "ShiftKey" iA
+\[ShiftKey]
+endsnippet
+snippet `\u0060sv\u0060` "SHacek" iA
+\[SHacek]
+endsnippet
+snippet `\u0060sha\u0060` "Shah" iA
+\[Shah]
+endsnippet
+snippet `\u0060sfl\u0060` "SpanFromLeft" iA
+\[SpanFromLeft]
+endsnippet
+snippet `\u0060(sfa|sft)\u0060` "SpanFromAbove" iA
+\[SpanFromAbove]
+endsnippet
+snippet `\u0060sfb\u0060` "SpanFromBoth" iA
+\[SpanFromBoth]
+endsnippet
+snippet `\u0060sun\u0060` "Sun" iA
+\[Sun]
+endsnippet
+snippet `\u0060tv\u0060` "THacek" iA
+\[THacek]
+endsnippet
+snippet `\u0060uo\u0060` "URing" iA
+\[URing]
+endsnippet
+snippet `\u0060zv\u0060` "ZHacek" iA
+\[ZHacek]
+endsnippet
+# 数学结构（根据字母表分类）
+snippet `\u0060algs\u0060` "Algebraics" iA
+Algebraics
+endsnippet
+snippet `\u0060ap\u0060` "Application" iA
+\[Application]
+endsnippet
+snippet `\u0060bools\u0060` "Booleans" iA
+Booleans
+endsnippet
+snippet `\u0060braket\u0060` "BraKet[{$1},{$2}" iA
+BraKet[{$1},{$2}]
+endsnippet
+snippet `\u0060bra\u0060` "Bra[{$1}" iA
+Bra[{$1}]
+endsnippet
+snippet `\u0060cbrt\u0060` "Surd[$1,3" iA
+Surd[$1,3]
+endsnippet
+snippet `\u0060cB\u0060` "CombinatorB" iA
+CombinatorB
+endsnippet
+snippet `\u0060comps\u0060` "Complexes" iA
+Complexes
+endsnippet
+snippet `\u0060cC\u0060` "C" iA
+C
+endsnippet
+snippet `\u0060cI\u0060` "I" iA
+I
+endsnippet
+snippet `\u0060cK\u0060` "CombinatorK" iA
+CombinatorK
+endsnippet
+snippet `\u0060cS\u0060` "CombinatorS" iA
+CombinatorS
+endsnippet
+snippet `\u0060cW\u0060` "CombinatorW" iA
+CombinatorW
+endsnippet
+snippet `\u0060cY\u0060` "CombinatorY" iA
+CombinatorY
+endsnippet
+snippet `\u0060dt\u0060` "D[$1,$2" iA
+D[$1,$2]
+endsnippet
+snippet `\u0060del\.\u0060` "Div[$1,$2" iA
+Div[$1,$2]
+endsnippet
+snippet `\u0060delx\u0060` "Curl[$1,$2" iA
+Curl[$1,$2]
+endsnippet
+snippet `\u0060del2\u0060` "Laplacian[$1,$2" iA
+Laplacian[$1,$2]
+endsnippet
+snippet `\u0060dlim\u0060` "DiscreteLimit[$1,$2\->\[Infinity" iA
+DiscreteLimit[$1,$2\->\[Infinity]]
+endsnippet
+snippet `\u0060dMlim\u0060` "DiscreteMaxLimit[$1,$2\->\[Infinity" iA
+DiscreteMaxLimit[$1,$2\->\[Infinity]]
+endsnippet
+snippet `\u0060dmlim\u0060` "DiscreteMinLimit[$1,$2\->\[Infinity" iA
+DiscreteMinLimit[$1,$2\->\[Infinity]]
+endsnippet
+snippet `\u0060dintt\u0060` "Integral[$1:f,{$2:x,$3:a,$4:b}" iA
+Integral[$1:f,{$2:x,$3:a,$4:b}]
+endsnippet
+snippet `\u0060delay\u0060` "SystemModelDelay[$1" iA
+SystemModelDelay[$1]
+endsnippet
+snippet `\u0060dist\u0060` "Distributed[$1,$2" iA
+Distributed[$1,$2]
+endsnippet
+snippet `\u0060divides\u0060` "Divides" iA
+\[Divides]
+endsnippet
+snippet `\u0060equiv\u0060` "Equivalent[$1,$2" iA
+Equivalent[$1,$2]
+endsnippet
+snippet `\u0060fn\u0060` "Function[$1,$2" iA
+Function[$1,$2]
+endsnippet
+snippet `\u0060grad\u0060` "Del[$1,$2" iA
+Del[$1,$2]
+endsnippet
+snippet `\u0060ints\u0060` "Integers" iA
+Integers
+endsnippet
+snippet `\u0060intt\u0060` "Integrate[$1,$2" iA
+Integrate[$1,$2]
+endsnippet
+snippet `\u0060kd\u0060` "KroneckerDelta[$1,$2" iA
+KroneckerDelta[$1,$2]
+endsnippet
+snippet `\u0060mlim\u0060` "MinLimit[$1,$2\->$3" iA
+MinLimit[$1,$2\->$3]
+endsnippet
+snippet `\u0060nrats\u0060` "NegativeRationals" iA
+NegativeRationals
+endsnippet
+snippet `\u0060nnrats\u0060` "NonNegativeRationals" iA
+NonNegativeRationals
+endsnippet
+snippet `\u0060nprats\u0060` "NonPositiveRationals" iA
+NonPositiveRationals
+endsnippet
+snippet `\u0060n0ints\u0060` "NegativeIntegers" iA
+NegativeIntegers
+endsnippet
+snippet `\u0060nnints\u0060` "NonNegativeIntegers" iA
+NonNegativeIntegers
+endsnippet
+snippet `\u0060npints\u0060` "NonPositiveIntegers" iA
+NonPositiveIntegers
+endsnippet
+snippet `\u0060nreals\u0060` "NegativeReals" iA
+NegativeReals
+endsnippet
+snippet `\u0060nnreals\u0060` "NonNegativeReals" iA
+NonNegativeReals
+endsnippet
+snippet `\u0060npreals\u0060` "NonPositiveReals" iA
+NonPositiveReals
+endsnippet
+snippet `\u0060pints\u0060` "PositiveIntegers" iA
+PositiveIntegers
+endsnippet
+snippet `\u0060preals\u0060` "PositiveReals" iA
+PositiveReals
+endsnippet
+snippet `\u0060prats\u0060` "PositiveRationals" iA
+PositiveRationals
+endsnippet
+snippet `\u0060(o\-o|ue)\u0060` "UndirectedEdge" iA
+\[UndirectedEdge]
+endsnippet
+snippet `\u0060(o\->|de)\u0060` "DirectedEdge" iA
+\[DirectedEdge]
+endsnippet
+snippet `\u0060pris\u0060` "Primes" iA
+Primes
+endsnippet
+snippet `\u0060pw\u0060` "Piecewise[{$1},$2" iA
+Piecewise[{$1},$2]
+endsnippet
+snippet `\u0060p\*\u0060` "PermutationProduct[$1,$2" iA
+PermutationProduct[$1,$2]
+endsnippet
+snippet `\u0060prodt\u0060` "Product[$1,{$2,$3,$4}" iA
+Product[$1,{$2,$3,$4}]
+endsnippet
+snippet `\u0060perp\u0060` "Perpendicular" iA
+\[Perpendicular]
+endsnippet
+snippet `\u0060rintt\u0060` "Integrate[$1,$2 \[Element] $3" iA
+Integrate[$1,$2 \[Element] $3]
+endsnippet
+snippet `\u0060surd\u0060` "Surd[${1:x} ,${2:n}" iA
+Surd[${1:x} ,${2:n}]
+endsnippet
+snippet `\u0060t\*\u0060` "TensorProduct" iA
+\[TensorProduct]
+endsnippet
+snippet `\u0060t\^\u0060` "TensorWedge" iA
+\[TensorWedge]
+endsnippet
+snippet `\u0060v>=\u0060` "VectorGreaterEqual" iA
+\[VectorGreaterEqual]
+endsnippet
+snippet `\u0060v<=\u0060` "VectorLessEqual" iA
+\[VectorLessEqual]
+endsnippet
+snippet `\u0060v>\u0060` "VectorGreater" iA
+\[VectorGreater]
+endsnippet
+snippet `\u0060v<\u0060` "VectorLess" iA
+\[VectorLess]
+endsnippet
+snippet `\u0060conj\u0060` "Conjugate" iA
+\[Conjugate]
+endsnippet

@@ -1,0 +1,585 @@
+# cSpell: disable
+Symbol                                   ,Alias1      ,Alias2   ,Alias3 ,...
+# 符号名称和数学对象
+\[Pi]                                    ,p           ,pi
+\[Infinity]                              ,inf
+\[ExponentialE]                          ,ee
+\[ImaginaryI]                            ,ii
+\[ImaginaryJ]                            ,jj
+# 字母和类似字母的形式
+## 希腊字母
+\[Alpha]                                 ,a           ,alpha
+\[Beta]                                  ,b           ,beta
+\[Gamma]                                 ,g           ,gamma
+\[Delta]                                 ,d           ,delta
+\[Epsilon]                               ,e           ,epsilon
+\[CurlyEpsilon]                          ,ce          ,cepsilon
+\[Zeta]                                  ,z           ,zeta
+\[Eta]                                   ,h           ,et       ,eta
+\[Theta]                                 ,q           ,th       ,theta
+\[CurlyTheta]                            ,cq          ,cth      ,ctheta
+\[Iota]                                  ,i           ,iota
+\[Kappa]                                 ,k           ,kappa
+\[CurlyKappa]                            ,ck          ,ckappa
+\[Lambda]                                ,l           ,lambda
+\[Mu]                                    ,m           ,mu
+\[Nu]                                    ,n           ,nu
+\[Xi]                                    ,x           ,xi
+\[Omicron]                               ,om          ,omicron
+\[Pi]                                    ,p           ,pi
+\[CurlyPi]                               ,cp          ,cpi
+\[Rho]                                   ,r           ,rho
+\[CurlyRho]                              ,cr          ,crho
+\[Sigma]                                 ,s           ,sigma
+\[FinalSigma]                            ,fs
+\[Tau]                                   ,t           ,tau
+\[Upsilon]                               ,u           ,upsilon
+\[Phi]                                   ,f           ,ph       ,phi
+\[CurlyPhi]                              ,j           ,cph      ,cphi
+\[Chi]                                   ,c           ,ch       ,chi
+\[Psi]                                   ,y           ,ps       ,psi
+\[Omega]                                 ,o           ,w        ,omega
+\[Digamma]                               ,di          ,digamma
+\[Koppa]                                 ,ko          ,koppa
+\[Stigma]                                ,sti         ,stigma
+\[Sampi]                                 ,sa          ,sampi
+\[CapitalAlpha]                          ,A           ,Alpha
+\[CapitalBeta]                           ,B           ,Beta
+\[CapitalGamma]                          ,G           ,Gamma
+\[CapitalDelta]                          ,D           ,Delta
+\[CapitalEpsilon]                        ,E           ,Epsilon
+\[CapitalZeta]                           ,Z           ,Zeta
+\[CapitalEta]                            ,H           ,Et       ,Eta
+\[CapitalTheta]                          ,Q           ,Th       ,Theta
+\[CapitalIota]                           ,I           ,Iota
+\[CapitalKappa]                          ,K           ,Kappa
+\[CapitalLambda]                         ,L           ,Lambda
+\[CapitalMu]                             ,M           ,Mu
+\[CapitalNu]                             ,N           ,Nu
+\[CapitalXi]                             ,X           ,Xi
+\[CapitalOmicron]                        ,Om          ,Omicron
+\[CapitalPi]                             ,P           ,Pi
+\[CapitalRho]                            ,R           ,Rho
+\[CapitalSigma]                          ,S           ,Sigma
+\[CapitalTau]                            ,T           ,Tau
+\[CapitalUpsilon]                        ,U           ,Upsilon
+\[CurlyCapitalUpsilon]                   ,cU          ,cUpsilon
+\[CapitalPhi]                            ,F           ,Ph       ,Phi
+\[CapitalChi]                            ,C           ,Ch       ,Chi
+\[CapitalPsi]                            ,Y           ,Ps       ,Psi
+\[CapitalOmega]                          ,O           ,W        ,Omega
+\[CapitalDigamma]                        ,Di          ,Digamma
+\[CapitalKoppa]                          ,Ko          ,Koppa
+\[CapitalStigma]                         ,Sti         ,Stigma
+\[CapitalSampi]                          ,Sa          ,Sampi
+# TODO: 需要考虑大小写转换问题
+\[Script$1]                              ,`sc([a-z])`
+\[ScriptCapital$1]                       ,`sc([A-Z])`
+\[Gothic$1]                              ,`go([a-z])`
+\[GothicCapital$1]                       ,`go([A-Z])`
+\[DoubleStruck$1]                        ,`ds([a-z])`
+\[DoubleStruck$1]                        ,`ds([0-9])`
+\[DoubleStruckCapital$1]                 ,`ds([A-Z])`
+\[Weierstrass$1]                         ,`wp([a-z])`
+\[Formal$1]                              ,`$([a-z])`
+\[FormalCapital$1]                       ,`$([A-Z])`
+\[GothicZero]                            ,go0
+\[GothicOne]                             ,go1
+\[GothicTwo]                             ,go2
+\[GothicThree]                           ,go3
+\[GothicFour]                            ,go4
+\[GothicFive]                            ,go5
+\[GothicSix]                             ,go6
+\[GothicSeven]                           ,go7
+\[GothicEight]                           ,go8
+\[GothicNine]                            ,go9
+\[ScriptZero]                            ,sc0
+\[ScriptOne]                             ,sc1
+\[ScriptTwo]                             ,sc2
+\[ScriptThree]                           ,sc3
+\[ScriptFour]                            ,sc4
+\[ScriptFive]                            ,sc5
+\[ScriptSix]                             ,sc6
+\[ScriptSeven]                           ,sc7
+\[ScriptEight]                           ,sc8
+\[ScriptNine]                            ,sc9
+## 英语字母的不同形式
+\[ScriptL]                               ,scl
+\[ScriptCapitalE]                        ,scE
+\[ScriptCapitalH]                        ,scH
+\[ScriptCapitalL]                        ,scL
+\[GothicCapitalC]                        ,goC
+\[GothicCapitalH]                        ,goH
+\[GothicCapitalI]                        ,goI
+\[GothicCapitalR]                        ,goR
+\[DoubleStruckCapitalC]                  ,dsC
+\[DoubleStruckCapitalR]                  ,dsR
+\[DoubleStruckCapitalQ]                  ,dsQ
+\[DoubleStruckCapitalZ]                  ,dsZ
+\[DoubleStruckCapitalN]                  ,dsN
+\[WeierstrassP]                          ,wp
+## 希伯来字母
+\[Aleph]                                 ,al
+\[Dalet]                                 ,da
+## 单位和类似字母的数学符号
+\[Micro]                                 ,mi
+\[Mho]                                   ,mho
+\[Angstrom]                              ,Ang
+\[HBar]                                  ,hb
+\[Cent]                                  ,cent
+\[Euro]                                  ,euro
+\[Degree]                                ,deg
+\[EmptySet]                              ,es
+\[Infinity]                              ,inf
+\[ExponentialE]                          ,ee
+\[ImaginaryI]                            ,ii
+\[ImaginaryJ]                            ,jj
+\[DoubledPi]                             ,pp
+\[DoubledGamma]                          ,gg
+\[PartialD]                              ,pd
+\[DifferentialD]                         ,dd
+\[CapitalDifferentialD]                  ,DD
+\[Del]                                   ,del
+\[DifferenceDelta]                       ,diffd
+\[Sum]                                   ,sum
+\[Product]                               ,prod
+\[Transpose]                             ,tr
+\[HermitianConjugate]                    ,hc
+\[DiscreteShift]                         ,shift
+\[DiscreteRatio]                         ,dratio
+## 形状、图标和几何结构
+\[FilledVerySmallSquare]                 ,fvssq
+\[EmptySmallSquare]                      ,essq
+\[FilledSmallSquare]                     ,fssq
+\[EmptySquare]                           ,esq
+\[GraySquare]                            ,gsq
+\[FilledSquare]                          ,fsq
+\[EmptySmallCircle]                      ,esci
+\[FilledSmallCircle]                     ,fsci
+\[EmptyCircle]                           ,eci
+\[GrayCircle]                            ,gci
+\[FilledCircle]                          ,fci
+\[FivePointedStar]                       ,\*5
+\[SixPointedStar]                        ,\*6
+\[MathematicaIcon]                       ,math
+\[HappySmiley]                           ,:\)          ,:\-\)
+# TODO: Use `\` for quotes and \ to prevent error
+\[NeutralSmiley]                         ,:\-\|
+\[SadSmiley]                             ,:\-\(
+\[FreakedSmiley]                         ,:\-@
+\[Wolf]                                  ,wf          ,wolf     ,howl   ,tungsten ,werewolf
+## 文本元素
+\[Dash]                                  ,\-
+\[LongDash]                              ,\-\-
+\[Bullet]                                ,bu
+\[DownQuestion]                          ,d?
+\[DownExclamation]                       ,d\!
+\[Prime]                                 ,'
+\[DoublePrime]                           ,''
+\[ReversePrime]                          ,`
+\[ReverseDoublePrime]                    ,``
+\[LeftGuillemet]                         ,g<<
+\[RightGuillemet]                        ,g>>
+\[Ellipsis]                              ,\.\.\.
+\[BlackBishop]                           ,bbishop
+\[BlackKing]                             ,bking
+\[BlackKnight]                           ,bknight
+\[BlackPawn]                             ,bpawn
+\[BlackQueen]                            ,bqueen
+\[BlackRook]                             ,brook
+\[WhiteBishop]                           ,wbishop
+\[WhiteKing]                             ,wking
+\[WhiteKnight]                           ,wknight
+\[WhitePawn]                             ,wpawn
+\[WhiteQueen]                            ,wqueen
+\[WhiteRook]                             ,wrook
+\[Dagger]                                ,dg
+\[DoubleDagger]                          ,ddg
+\[UnderParenthesis]                      ,u\(
+\[OverParenthesis]                       ,o\(
+\[UnderBracket]                          ,u\[
+\[OverBracket]                           ,o\[
+\[UnderBrace]                            ,u\{
+\[OverBrace]                             ,o\{
+\[HorizontalLine]                        ,hline
+\[VerticalLine]                          ,vline
+\[Ellipsis]                              ,\.\.\.
+## 扩充的拉丁字母
+# TODO: Fix This
+\[ADoubleDot]                            ,"a"""
+\[EDoubleDot]                            ,"e"""
+\[IDoubleDot]                            ,"i"""
+\[ODoubleDot]                            ,"o"""
+\[UDoubleDot]                            ,"u"""
+\[YDoubleDot]                            ,"y"""
+\[CapitalADoubleDot]                     ,"A"""
+\[CapitalEDoubleDot]                     ,"E"""
+\[CapitalIDoubleDot]                     ,"I"""
+\[CapitalODoubleDot]                     ,"O"""
+\[CapitalUDoubleDot]                     ,"U"""
+\[AGrave]                                ,a`
+\[AAcute]                                ,a'
+\[AHat]                                  ,a\^
+\[ATilde]                                ,a~
+\[ARing]                                 ,ao
+\[ABar]                                  ,a\-
+\[ACup]                                  ,au
+\[AE]                                    ,ae
+\[CAcute]                                ,c'
+\[CCedilla]                              ,"c,"
+\[CHacek]                                ,cv
+\[EGrave]                                ,e`
+\[EAcute]                                ,e'
+\[EBar]                                  ,e\-
+\[EHat]                                  ,e\^
+\[ECup]                                  ,eu
+\[IGrave]                                ,i`
+\[IAcute]                                ,i'
+\[IHat]                                  ,i\^
+\[ICup]                                  ,iu
+\[Eth]                                   ,d\-
+\[LSlash]                                ,l/
+\[NTilde]                                ,n~
+\[OGrave]                                ,o`
+\[OAcute]                                ,o'
+\[OHat]                                  ,o\^
+\[OTilde]                                ,o~
+\[ODoubleAcute]                          ,o''
+\[OSlash]                                ,o/
+\[OE]                                    ,oe
+\[SHacek]                                ,sv
+\[UGrave]                                ,u`
+\[UAcute]                                ,u'
+\[UHat]                                  ,u\^
+\[UDoubleAcute]                          ,u''
+\[YAcute]                                ,y'
+\[Thorn]                                 ,thn
+\[SZ]                                    ,sz          ,ss
+\[CapitalAGrave]                         ,A`
+\[CapitalAAcute]                         ,A'
+\[CapitalAHat]                           ,A\^
+\[CapitalATilde]                         ,A~
+\[CapitalARing]                          ,Ao
+\[CapitalABar]                           ,A\-
+\[CapitalACup]                           ,Au
+\[CapitalAE]                             ,AE
+\[CapitalCAcute]                         ,C'
+\[CapitalCCedilla]                       ,"C,"
+\[CapitalCHacek]                         ,Cv
+\[CapitalEGrave]                         ,E`
+\[CapitalEAcute]                         ,E'
+\[CapitalEBar]                           ,E\-
+\[CapitalEHat]                           ,E\^
+\[CapitalECup]                           ,Eu
+\[CapitalIGrave]                         ,I`
+\[CapitalIAcute]                         ,I'
+\[CapitalIHat]                           ,I\^
+\[CapitalICup]                           ,Iu
+\[CapitalEth]                            ,D\-
+\[CapitalLSlash]                         ,L/
+\[CapitalNTilde]                         ,N~
+\[CapitalOGrave]                         ,O`
+\[CapitalOAcute]                         ,O'
+\[CapitalOHat]                           ,O\^
+\[CapitalOTilde]                         ,O~
+\[CapitalODoubleAcute]                   ,O''
+\[CapitalOSlash]                         ,O/
+\[CapitalOE]                             ,OE
+\[CapitalSHacek]                         ,Sv
+\[CapitalUGrave]                         ,U`
+\[CapitalUAcute]                         ,U'
+\[CapitalUHat]                           ,U\^
+\[CapitalUDoubleAcute]                   ,U''
+\[CapitalYAcute]                         ,Y'
+\[CapitalThorn]                          ,Thn
+# 算符
+## 基本数学算符
+\[Sqrt]                                  ,sqrt
+\[CubeRoot]                              ,cbrti
+\[Cross]                                 ,cross
+\[PlusMinus]                             ,\+\-
+\[MinusPlus]                             ,\-\+
+÷                                        ,div
+\*                                        ,times
+## 微积分和代数中的算符
+\[Limit]                                 ,lim
+\[MaxLimit]                              ,Mlim
+\[MinLimit]                              ,mlim
+\[Del]                                   ,del
+\[PartialD]                              ,pd
+\[DifferentialD]                         ,dd
+\[Sum]                                   ,sum
+\[Product]                               ,prod
+\[Integral]                              ,int
+\[ContourIntegral]                       ,cint
+\[CounterClockwiseContourIntegral]       ,cccint
+\[ClockwiseContourIntegral]              ,ccint
+\[Conjugate]                             ,co          ,conj
+\[Transpose]                             ,tr
+\[ConjugateTranspose]                    ,ct
+\[HermitianConjugate]                    ,hc
+## 逻辑和其他联结
+\[And]                                   ,&&          ,and
+\[Or]                                    ,||          ,or
+\[Not]                                   ,\!           ,not
+\[Element]                               ,el
+\[ForAll]                                ,fa
+\[Exists]                                ,ex
+\[NotExists]                             ,\!ex
+\[Xor]                                   ,xor
+\[Xnor]                                  ,xnor
+\[Nand]                                  ,nand
+\[Nor]                                   ,nor
+\[Implies]                               ,=>
+\[Therefore]                             ,tf
+\[SuchThat]                              ,st
+\[VerticalSeparator]                     ,\|
+\[Colon]                                 ,:
+## 表示行为的算符
+\[SmallCircle]                           ,sc
+\[CirclePlus]                            ,c\+
+\[CircleMinus]                           ,c\-
+\[CircleTimes]                           ,c\*
+\[CircleDot]                             ,c\.
+\[Diamond]                               ,dia
+\[CenterDot]                             ,\.
+\[Star]                                  ,star
+\[Backslash]                             ,\
+\[Wedge]                                 ,\^
+\[Vee]                                   ,v
+\[Union]                                 ,un
+\[Intersection]                          ,inter
+\[Coproduct]                             ,coprod
+\[Square]                                ,sq
+## 括号算符
+\[LeftFloor]                             ,lf
+\[RightFloor]                            ,rf
+\[LeftCeiling]                           ,lc
+\[RightCeiling]                          ,rc
+\[LeftDoubleBracket]                     ,\[\[
+\[RightDoubleBracket]                    ,\]\]
+\[LeftAngleBracket]                      ,<
+\[RightAngleBracket]                     ,>
+\[LeftBracketingBar]                     ,l\|
+\[RightBracketingBar]                    ,r\|
+\[LeftDoubleBracketingBar]               ,l\|\|
+\[RightDoubleBracketingBar]              ,r\|\|
+## 表示关系的算符
+\[Equal]                                 ,==
+\[LongEqual]                             ,l=
+\[Congruent]                             ,===
+\[Tilde]                                 ,~
+\[TildeTilde]                            ,~~
+\[TildeEqual]                            ,~=
+\[TildeFullEqual]                        ,~==
+\[EqualTilde]                            ,=~
+\[HumpEqual]                             ,h=
+\[NotEqual]                              ,\!=
+\[NotCongruent]                          ,\!===
+\[NotTilde]                              ,\!~
+\[NotTildeTilde]                         ,\!~~
+\[NotTildeEqual]                         ,\!~=
+\[NotTildeFullEqual]                     ,\!~==
+\[NotEqualTilde]                         ,\!=~
+\[NotHumpEqual]                          ,\!h=
+\[Proportional]                          ,prop
+\[GreaterEqual]                          ,>=
+\[LessEqual]                             ,<=
+\[GreaterSlantEqual]                     ,>/
+\[LessSlantEqual]                        ,</
+\[GreaterTilde]                          ,>~
+\[LessTilde]                             ,<~
+\[NotGreaterEqual]                       ,\!>=
+\[NotLessEqual]                          ,\!<=
+\[NotGreaterSlantEqual]                  ,\!>/
+\[NotLessSlantEqual]                     ,\!</
+\[NotGreaterTilde]                       ,\!>~
+\[NotLessTilde]                          ,\!<~
+\[NotGreater]                            ,\!>
+\[NotLess]                               ,\!<
+\[Subset]                                ,sub
+\[Superset]                              ,sup
+\[SubsetEqual]                           ,sub=
+\[SupersetEqual]                         ,sup=
+\[Element]                               ,el
+\[ReverseElement]                        ,mem
+\[NotSubset]                             ,\!sub
+\[NotSuperset]                           ,\!sup
+\[NotSubsetEqual]                        ,\!sub=
+\[NotSupersetEqual]                      ,\!sup=
+\[NotElement]                            ,\!el
+\[NotReverseElement]                     ,\!mem
+\[VerticalBar]                           ," \|"
+\[DoubleVerticalBar]                     ," \|\|"
+\[NotVerticalBar]                        ,\!\|
+\[NotDoubleVerticalBar]                  ,\!\|\|
+## 基于箭头和向量的算符
+\[Rule]                                  ,\->
+\[RuleDelayed]                           ,:>
+\[Implies]                               ,=>
+\[RightArrow]                            ," \->"
+\[LeftArrow]                             ,<\-
+\[LeftRightArrow]                        ,<\->
+\[LongRightArrow]                        ,\-\->
+\[LongLeftArrow]                         ,<\-\-
+\[LongLeftRightArrow]                    ,<\-\->
+\[DoubleRightArrow]                      ," =>"
+\[DoubleLeftArrow]                       ," <="
+\[DoubleLeftRightArrow]                  ,<=>
+\[DoubleLongRightArrow]                  ,==>
+\[DoubleLongLeftArrow]                   ,<==
+\[DoubleLongLeftRightArrow]              ,<==>
+\[RightVector]                           ,vec
+\[Equilibrium]                           ,equi
+\[RightTee]                              ,rT
+\[LeftTee]                               ,lT
+\[UpTee]                                 ,uT
+\[DownTee]                               ,dT
+# 结构元素和键盘字符
+\[InvisibleComma]                        ,            ,
+\[InvisibleApplication]                  ,@
+\[InvisibleSpace]                        ,is
+\[ImplicitPlus]                          ,\+
+\[AlignmentMarker]                       ,am
+\[NoBreak]                               ,nb
+\[Null]                                  ,null
+\[VeryThinSpace]                         ," "
+\[ThinSpace]                             ,"  "
+\[MediumSpace]                           ,"   "
+\[ThickSpace]                            ,"    "
+\[InvisibleSpace]                        ,is
+\[NegativeVeryThinSpace]                 ,"\- "
+\[NegativeThinSpace]                     ,"\-  "
+\[NegativeMediumSpace]                   ,"\-   "
+\[NegativeThickSpace]                    ,"\-    "
+\[NonBreakingSpace]                      ,nbs
+\[IndentingNewLine]                      ,nl
+\[SelectionPlaceholder]                  ,spl
+\[Placeholder]                           ,pl
+\[SpaceIndicator]                        ,space
+\[ReturnIndicator]                       ,ret
+\[ReturnKey]                             ," ret"
+\[EnterKey]                              ,ent
+\[EscapeKey]                             ," esc"
+\[AliasIndicator]                        ,esc
+\[ControlKey]                            ,ctrl
+\[CommandKey]                            ,cmd
+\[LeftModified]                          ,\[
+\[RightModified]                         ,\]
+\[CloverLeaf]                            ,cl
+# 其他符号（根据字母表分类）
+\[AquariusSign]                          ,aqua
+\[AriesSign]                             ,aries
+\[CapricornSign]                         ,capri
+\[CancerSign]                            ,cancer
+\[LibraSign]                             ,libra
+\[LeoSign]                               ,leo
+\[SagittariusSign]                       ,sag
+\[ScorpioSign]                           ,scor
+\[TaurusSign]                            ,taur
+\[VirgoSign]                             ,virgo
+## 黄道十二宫
+\[AltKey]                                ,alt
+\[Breve]                                 ,bv
+\[ConstantC]                             ,cc
+\[Cedilla]                               ,cd
+\[Continuation]                          ,cont
+\[Conditioned]                           ,cond
+\[DHacek]                                ,dv
+\[DiscretionaryHyphen]                   ,dhy
+\[DiscretionaryPageBreakAbove]           ,dpba
+\[DiscretionaryPageBreakBelow]           ,dpbb
+\[DiscretionaryParagraphSeparator]       ,dpsep
+\[DiscretionaryLineSeparator]            ,dlsep
+\[DownBreve]                             ,dbv
+\[EHacek]                                ,ev
+\[EmptyVerySmallSquare]                  ,evssq
+\[DoubledGamma]                          ,gi
+\[GeminiSign]                            ,gem
+\[LetterSpace]                           ,ls
+\-                                        ,hy
+\[Hacek]                                 ,hck
+\[InvisiblePrefixScriptBase]             ,i\-
+\[KeyBar]                                ,kb
+\[LineSeparator]                         ,lsep
+\[Mod1Key]                               ,m1
+\[Mod2Key]                               ,m2
+\[NumberComma]                           ,"n,"
+\[NHacek]                                ,nv
+\[OptionalKey]                           ,opt
+\[ParagraphSeparator]                    ,psep
+\[PageBreakBelow]                        ,pbb
+\[PageBreakAbove]                        ,pba
+\[RHacek]                                ,rv
+\[RegisteredTrademark]                   ,rtm
+\[ShiftKey]                              ,sh
+\[SHacek]                                ,sv
+\[Shah]                                  ,sha
+\[SpanFromLeft]                          ,sfl
+\[SpanFromAbove]                         ,sfa         ,sft
+\[SpanFromBoth]                          ,sfb
+\[Sun]                                   ,sun
+\[THacek]                                ,tv
+\[URing]                                 ,uo
+\[ZHacek]                                ,zv
+# 数学结构（根据字母表分类）
+Algebraics                               ,algs
+\[Application]                           ,ap
+Booleans                                 ,bools
+"BraKet[{$1},{$2}]"                      ,braket
+"Bra[{$1}]"                              ,bra
+"Surd[$1,3]"                             ,cbrt
+CombinatorB                              ,cB
+Complexes                                ,comps
+C                                        ,cC
+I                                        ,cI
+CombinatorK                              ,cK
+CombinatorS                              ,cS
+CombinatorW                              ,cW
+CombinatorY                              ,cY
+"D[$1,$2]"                               ,dt
+"Div[$1,$2]"                             ,del\.
+"Curl[$1,$2]"                            ,delx
+"Laplacian[$1,$2]"                       ,del2
+"DiscreteLimit[$1,$2\->\[Infinity]]"      ,dlim
+"DiscreteMaxLimit[$1,$2\->\[Infinity]]"   ,dMlim
+"DiscreteMinLimit[$1,$2\->\[Infinity]]"   ,dmlim
+"Integral[$1:f,{$2:x,$3:a,$4:b}]"        ,dintt
+"SystemModelDelay[$1]"                   ,delay
+"Distributed[$1,$2]"                     ,dist
+\[Divides]                               ,divides
+"Equivalent[$1,$2]"                      ,equiv
+"Function[$1,$2]"                        ,fn
+"Del[$1,$2]"                             ,grad
+Integers                                 ,ints
+"Integrate[$1,$2]"                       ,intt
+"KroneckerDelta[$1,$2]"                  ,kd
+"MinLimit[$1,$2\->$3]"                    ,mlim
+NegativeRationals                        ,nrats
+NonNegativeRationals                     ,nnrats
+NonPositiveRationals                     ,nprats
+NegativeIntegers                         ,n0ints
+NonNegativeIntegers                      ,nnints
+NonPositiveIntegers                      ,npints
+NegativeReals                            ,nreals
+NonNegativeReals                         ,nnreals
+NonPositiveReals                         ,npreals
+PositiveIntegers                         ,pints
+PositiveReals                            ,preals
+PositiveRationals                        ,prats
+\[UndirectedEdge]                        ,o\-o         ,ue
+\[DirectedEdge]                          ,o\->         ,de
+Primes                                   ,pris
+"Piecewise[{$1},$2]"                     ,pw
+"PermutationProduct[$1,$2]"              ,p\*
+"Product[$1,{$2,$3,$4}]"                 ,prodt
+\[Perpendicular]                         ,perp
+"Integrate[$1,$2 \[Element] $3]"         ,rintt
+"Surd[${1:x} ,${2:n}]"                   ,surd
+\[TensorProduct]                         ,t\*
+\[TensorWedge]                           ,t\^
+\[VectorGreaterEqual]                    ,v>=
+\[VectorLessEqual]                       ,v<=
+\[VectorGreater]                         ,v>
+\[VectorLess]                            ,v<
+\[Conjugate]                             ,conj
