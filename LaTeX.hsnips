@@ -309,6 +309,10 @@ ${1:${VISUAL}}
 \end{solution}
 endsnippet
 
+# For reasons that `soul` package is not compatible with Chinese documents
+# I use the following command to highlight
+# \newcommand\hl{\bgroup\markoverwith
+# {\textcolor{yellow}{\rule[-.5ex]{2pt}{2.5ex}}}\ULon}
 snippet ==== "Highlight" iA
 \hl{${1:${VISUAL}}}
 endsnippet
