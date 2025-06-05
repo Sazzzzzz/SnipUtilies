@@ -24,6 +24,26 @@ snippet `^.*\.print` "print" iA
 ``rv = gen_func(m[0], "print")``
 endsnippet
 
-snippet `^todo` "TODO" iA
+snippet `#\s*todo` "TODO" iA
 # TODO: $0
+endsnippet
+
+snippet `^(\s*)todo` "TODO" iA
+``rv = m[1]``# TODO: $0
+endsnippet
+
+snippet `#\s*info` "INFO" iA
+# INFO: $0
+endsnippet
+
+snippet `^(\s*)info` "INFO" iA
+``rv = m[1]``# INFO: $0
+endsnippet
+
+snippet `#\s*note` "NOTE" iA
+# INFO: $0
+endsnippet
+
+snippet `^(\s*)note` "NOTE" iA
+``rv = m[1]``# INFO: $0
 endsnippet
