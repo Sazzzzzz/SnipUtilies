@@ -36,164 +36,202 @@ function gen_fraction(line) {
 }
 
 function list(context) {
-    return context.scopes.some(s => s.startsWith("meta.function.environment.list"));
+    return context.scopes.some(s => s === "meta.function.environment.list.latex");
 }
 
+function math(context) {
+    return context.scopes.some(s => s === "support.class.math.block.environment.latex");
+}
+    
 endglobal
 
 # ===== Mathmatical Constants =====
-
-snippet dd "dd" iAm
+context math(context)
+snippet dd "dd" iA
 \mathrm{d}
 endsnippet
 
-snippet ee "ee" iAm
+context math(context)
+snippet ee "ee" iA
 \e
 endsnippet
 
-snippet `(ii|jj)` "ii" iAm
+context math(context)
+snippet `(ii|jj)` "ii" iA
 \ii
 endsnippet
 
 # ====== Greek and Hebrew Letters ======
+context math(context)
 priority 100
-snippet `(?<!\\)(mu|rho|pi|beta|zeta|eta|iota|nu|pi|rho|tau|phi|Phi|xi|chi|psi|Xi|Pi|Phi|Psi)` "greek" iAm
+snippet `(?<!\\)(mu|rho|pi|beta|zeta|eta|iota|nu|pi|rho|tau|phi|Phi|xi|chi|psi|Xi|Pi|Phi|Psi)` "greek" iA
 \\``rv = m[1]``
 endsnippet
 
 priority 100
-snippet eps "epsilon" iAm
+context math(context)
+snippet eps "epsilon" iA
 \epsilon
 endsnippet
 
-snippet lam "lambda" iAm
+context math(context)
+snippet lam "lambda" iA
 \lambda
 endsnippet
 
-snippet tht "theta" iAm
+context math(context)
+snippet tht "theta" iA
 \theta
 endsnippet
 
-snippet del "delta" iAm
+context math(context)
+snippet del "delta" iA
 \delta
 endsnippet
 
-snippet Del "Delta" iAm
+context math(context)
+snippet Del "Delta" iA
 \Delta
 endsnippet
 
-snippet alp "alpha" iAm
+context math(context)
+snippet alp "alpha" iA
 \alpha
 endsnippet
 
-snippet sig "sigma" iAm
+context math(context)
+snippet sig "sigma" iA
 \sigma
 endsnippet
 
-snippet `(?<!\\)gam` "gamma" iAm
+context math(context)
+snippet `(?<!\\)gam` "gamma" iA
 \gamma
 endsnippet
 
-snippet `(?<!\\)Gam` "Gamma" iAm
+context math(context)
+snippet `(?<!\\)Gam` "Gamma" iA
 \Gamma
 endsnippet
 
 priority 200
-snippet veps "varepsilon" iAm
+context math(context)
+snippet veps "varepsilon" iA
 \varepsilon
 endsnippet
 # ====== Delimiters ======
 priority 100
-snippet (). "left( right)" Aim
+context math(context)
+snippet (). "left( right)" iA
 \left( ${0} \right)
 endsnippet
 
 priority 100
-snippet ||. "left| right|" Aim
+context math(context)
+snippet ||. "left| right|" iA
 \left| ${0} \right|
 endsnippet
 
 priority 100
-snippet []. "left[ right]" Aim
+context math(context)
+snippet []. "left[ right]" iA
 \left[ ${0} \right]
 endsnippet
 
 priority 100
-snippet {}. "left\{ right\}" Aim
+context math(context)
+snippet {}. "left\{ right\}" iA
 \left\\{ ${0} \right\\}
 endsnippet
 
 priority 100
-snippet <>. "left< right>" Aim
+context math(context)
+snippet <>. "left< right>" iA
 \langle ${0} \rangle
 endsnippet
 
-snippet /. "substitute" iAm
+context math(context)
+snippet /. "substitute" iA
 \left. ${1} \right|_{$0}
 endsnippet
 
-snippet set "set" iAm
+context math(context)
+snippet set "set" iA
 \left\\{ ${1} \mid $0 \right\\}
 endsnippet
 
-snippet binom "binomial" iAm
+context math(context)
+snippet binom "binomial" iA
 \binom{${1:n}}{${2:k}}$0
 endsnippet
 
 # ====== Math Constructs ======
 
-snippet // "auto fraction Visual" iAm
+context math(context)
+snippet // "auto fraction Visual" iA
 \\frac{${1:${VISUAL}}}{$2}$0
 endsnippet
 
 # Modified from https://castel.dev/post/lecture-notes-1/#fractions
-snippet `((\d+)|(\d*)((\\)?(([A-Za-z]+)((\^|_)(\{\d+\}|\d))*))+)/` "auto fraction with multiplication" iAm
+context math(context)
+snippet `((\d+)|(\d*)((\\)?(([A-Za-z]+)((\^|_)(\{\d+\}|\d))*))+)/` "auto fraction with multiplication" iA
 \\frac{``rv = m[1]``}{$1}$0
 endsnippet
 
 priority 300
-snippet `^.*\)/` "() Fraction" iAm
+context math(context)
+snippet `^.*\)/` "() Fraction" iA
 ``rv = gen_fraction(m[0])``{$1}$0
 endsnippet
 
-snippet pw "power" iAm
+context math(context)
+snippet pw "power" iA
 ^{${1:n}} 
 endsnippet
 
-snippet sr "square" iAm
+context math(context)
+snippet sr "square" iA
 ^{2}$0
 endsnippet
 
-snippet cb "cube" iAm
+context math(context)
+snippet cb "cube" iA
 ^{3}$0
 endsnippet
 
-snippet `(?<!\\)inv`"inverse" iAm
+context math(context)
+snippet `(?<!\\)inv`"inverse" iA
 ^{-1}$0
 endsnippet
 
-snippet adj "adjoint" iAm
+context math(context)
+snippet adj "adjoint" iA
 ^{*}
 endsnippet
 
-snippet sb "subscript" iAm
+context math(context)
+snippet sb "subscript" iA
 _{${1:2}}$0
 endsnippet
 
-snippet `([A-Za-z])(\d)` "auto subscript for single digit" iAm
+context math(context)
+snippet `([A-Za-z])(\d)` "auto subscript for single digit" iA
 `` rv = m[1] + "_" + m[2]``
 endsnippet
 
-snippet `([A-Za-z])_(\d) ` "auto bracklet for single digit subscript" iAm
+context math(context)
+snippet `([A-Za-z])_(\d) ` "auto bracklet for single digit subscript" iA
 `` rv = m[1] + "_{" + m[2] + "}"``
 endsnippet
 
 priority 100
-snippet `([A-Za-z])_(\d\d)` "auto subscript for double digit" iAm
+context math(context)
+snippet `([A-Za-z])_(\d\d)` "auto subscript for double digit" iA
 `` rv = m[1] + "_{" + m[2] + "}"`` 
 endsnippet
 
-snippet `(?<!\\)([A-Za-z}])\.([0-9a-z])` "auto subscript for letters with dot" iAm
+context math(context)
+snippet `(?<!\\)([A-Za-z}])\.([0-9a-z])` "auto subscript for letters with dot" iA
 `` rv = m[1] + "_{" + m[2] + "}" ``
 endsnippet
 
@@ -205,89 +243,109 @@ endsnippet
 # But you shouldn't worry about it as long as you are consistent throughout the document
 
 priority 200
-snippet `(?<!\\)dintt` "definite integral" iAm
+context math(context)
+snippet `(?<!\\)dintt` "definite integral" iA
 \int_{${1:0}}^{${2:\infty}} ${4:${VISUAL}} \\d{${5:x}}$0
 endsnippet
 
 priority 200
-snippet `(?<!\\)intq` "line integral" iAm
+context math(context)
+snippet `(?<!\\)intq` "line integral" iA
 \int_{${1:L}} ${2:${VISUAL}} \\d{${3:s}}$0
 endsnippet
 
 priority 100
-snippet `(?<!\\)intt` "integral" iAm
+context math(context)
+snippet `(?<!\\)intt` "integral" iA
 \int ${1} \\d{${2:x}} ${4:${VISUAL}}
 endsnippet
 
 priority 200
-snippet `(?<!\\)iintt` "integrate" iAm
+context math(context)
+snippet `(?<!\\)iintt` "integrate" iA
 \iint_{${1:D}} ${4:${VISUAL}} $0
 endsnippet
 
 priority 300
-snippet `(?<!\\)iiintt` "integrate" iAm
+context math(context)
+snippet `(?<!\\)iiintt` "integrate" iA
 \iiint_{${1:V}} ${4:${VISUAL}} $0
 endsnippet
 
-snippet `(?<!\\)sumt` "sumt" iAm
+context math(context)
+snippet `(?<!\\)sumt` "sumt" iA
 \sum_{${1:n}=${2:1}}^{${3:\infty}} ${4:${VISUAL}}
 endsnippet
 
-snippet `(?<!\\)sumq` "sumq" iAm
+context math(context)
+snippet `(?<!\\)sumq` "sumq" iA
 \sum_{$1} ${0:${VISUAL}}
 endsnippet
 
-snippet `\\capt` "bigcap" iAm
+context math(context)
+snippet `\\capt` "bigcap" iA
 \bigcap_{${1:i}=1}^{${2:\infty}} ${4:${VISUAL}}
 endsnippet
 
-snippet `\\capq` "bigcap" iAm
+context math(context)
+snippet `\\capq` "bigcap" iA
 \bigcap_{$1} ${0:${VISUAL}}
 endsnippet
 
-snippet `\\cupt` "bigcup" iAm
+context math(context)
+snippet `\\cupt` "bigcup" iA
 \bigcup_{${1:i}=1}^{${2:\infty}} ${4:${VISUAL}}
 endsnippet
 
-snippet `\\cupq` "bigcap" iAm
+context math(context)
+snippet `\\cupq` "bigcap" iA
 \bigcup_{$1} ${0:${VISUAL}}
 endsnippet
 
-snippet `\\sqcupt` "bigsqcup" iAm
+context math(context)
+snippet `\\sqcupt` "bigsqcup" iA
 \bigsqcup_{${1:i}=1}^{${2:\infty}} ${4:${VISUAL}}
 endsnippet
 
-snippet `\\sqcapq` "bigsqcap" iAm
+context math(context)
+snippet `\\sqcapq` "bigsqcap" iA
 \bigsqcap_{$1} ${0:${VISUAL}}
 endsnippet
 
-snippet `\\sqcupq` "bigsqcup" iAm
+context math(context)
+snippet `\\sqcupq` "bigsqcup" iA
 \bigsqcup_{$1} ${0:${VISUAL}}
 endsnippet
 
 
-snippet `\\infq` "infinmum" iAm
+context math(context)
+snippet `\\infq` "infinmum" iA
 \inf_{$1} ${0:${VISUAL}}
 endsnippet
 
-snippet `\\supq` "supremum" iAm
+context math(context)
+snippet `\\supq` "supremum" iA
 \sup_{$1} ${0:${VISUAL}}
 endsnippet
 
-snippet `(?<!\\)lim` "limit" iAm
+context math(context)
+snippet `(?<!\\)lim` "limit" iA
 \lim_{${1:n} \to ${2:\infty}} ${4:${VISUAL}}
 endsnippet
 
-snippet `(?<!\\)prod` "product" iAm
+context math(context)
+snippet `(?<!\\)prod` "product" iA
 \prod_{${1:n=${2:1}}}^{${3:\infty}} ${4:${VISUAL}}
 endsnippet
 
 
-snippet `OVER` "over" iAm
+context math(context)
+snippet `OVER` "over" iA
 \overbrace{${1:${VISUAL}}}
 endsnippet
 
-snippet `UNDER` "under" iAm
+context math(context)
+snippet `UNDER` "under" iA
 \underbrace{${1:${VISUAL}}}
 endsnippet
 
@@ -304,14 +362,19 @@ ${0:${VISUAL}}
 endsnippet
 
 context list(context)
-snippet `^\s*\+\s` "enumerate list gen" iA
-\item ${0}
+snippet `^(\s*)\+\s` "enumerate list item gen" iA
+``rv = m[1]``\item ${0}
 endsnippet
 
-snippet `^\s*\+\s` "enumerate list gen" iA
+snippet `^(\s*)\+\s` "enumerate list gen" iA
 \begin{enumerate}
     \item ${0}
 \end{enumerate}
+endsnippet
+
+context list(context)
+snippet `^(\s*)\d\s` "itemize list item gen" iA
+``rv = m[1]``\item ${0}
 endsnippet
 
 snippet `^1\.\s` "itemize list gen" iA
@@ -320,7 +383,12 @@ snippet `^1\.\s` "itemize list gen" iA
 \end{itemize}
 endsnippet
 
-snippet `^\-\s` "description list gen" iA
+context list(context)
+snippet `^(\s*)\-\s` "description list item gen" iA
+``rv = m[1]``\item[${1:label}] ${0}
+endsnippet 
+
+snippet `^\s*\-\s` "description list gen" iA
 \begin{description}
     \item[${1:label}] ${0}
 \end{description}
@@ -388,242 +456,296 @@ endsnippet
 
 ===== Standard Functions =====
 
-snippet `(?<!\\)(sin|cos|tan|cot|sec|csc|arcsin|arccos|arctan)` "trig function" iAm
+context math(context)
+snippet `(?<!\\)(sin|cos|tan|cot|sec|csc|arcsin|arccos|arctan)` "trig function" iA
 \\``rv = m[1]``
 endsnippet
 
-snippet `(?<!\\)(exp|ln|inf|sup)` "analytic function" iAm
+context math(context)
+snippet `(?<!\\)(exp|ln|inf|sup)` "analytic function" iA
 \\``rv = m[1]``
 endsnippet
 
-snippet `(?<!\\)(det|dim)` "linear algebra function" iAm
+context math(context)
+snippet `(?<!\\)(det|dim)` "linear algebra function" iA
 \\``rv = m[1]``
 endsnippet
 
-snippet `(?<!\\)(cap|cup|sqcup|sqcap)` "set theory function" iAm
+context math(context)
+snippet `(?<!\\)(cap|cup|sqcup|sqcap)` "set theory function" iA
 \\``rv = m[1]``$0
 endsnippet
 
-snippet sqrt "\sqrt{}" iAm
+context math(context)
+snippet sqrt "\sqrt{}" iA
 \sqrt{${1}}$0
 endsnippet
 
 ===== Operators and Relations =====
 priority 100
-snippet inn iAm
+context math(context)
+snippet inn iA
 \in $0
 endsnippet
 
 priority 200
-snippet !inn "not in" iAm
+context math(context)
+snippet !inn "not in" iA
 \notin $0
 endsnippet
 
-snippet != "no equals" iAm
+context math(context)
+snippet != "no equals" iA
 \neq 
 endsnippet
 
 priority 200
-snippet <= "less than or equal to" iAm
+context math(context)
+snippet <= "less than or equal to" iA
 \leq $0
 endsnippet
 
 priority 200
-snippet >= "greater than or equal to" iAm
+context math(context)
+snippet >= "greater than or equal to" iA
 \geq $0
 endsnippet
 
-snippet `(?<!\\)sub` "subset" iAm
+context math(context)
+snippet `(?<!\\)sub` "subset" iA
 \subset$0
 endsnippet
 
-snippet `\\subset=` "subset or equal" iAm
+context math(context)
+snippet `\\subset=` "subset or equal" iA
 \subseteq $0
 endsnippet
 
-snippet == "equivalent" iAm
+context math(context)
+snippet == "equivalent" iA
 \equiv $0
 endsnippet
 
-snippet >> "greater than" iAm
+context math(context)
+snippet >> "greater than" iA
 \gg $0
 endsnippet
 
-snippet << "less than" iAm
+context math(context)
+snippet << "less than" iA
 \ll $0
 endsnippet
 
-snippet ~~ "sim" iAm
+context math(context)
+snippet ~~ "sim" iA
 \sim $0
 endsnippet
 
-snippet \\\ "backslash" iAm
+context math(context)
+snippet \\\ "backslash" iA
 \backslash $0
 endsnippet
 
 priority 100
-snippet ~= "Isomorphism" iAm
+context math(context)
+snippet ~= "Isomorphism" iA
 \cong $0
 endsnippet
 
 priority 200
-snippet !~= "not isomorphism" iAm
+context math(context)
+snippet !~= "not isomorphism" iA
 \not\cong $0
 endsnippet
 
-snippet +- "plus minus" iAm
+context math(context)
+snippet +- "plus minus" iA
 \pm $0
 endsnippet
 
-snippet -+ "minus plus" iAm
+context math(context)
+snippet -+ "minus plus" iA
 \mp $0
 endsnippet
 
 # Require package mathtools
-snippet := "define" iAm
+context math(context)
+snippet := "define" iA
 \coloneqq $0
 endsnippet
 
-snippet |-> "mapsto" iAm
+context math(context)
+snippet |-> "mapsto" iA
 \mapsto $0
 endsnippet
 
 # I use \newcommand{\abs}[1]{\left|#1\right|}
-snippet abs "absolute value" iAm
+context math(context)
+snippet abs "absolute value" iA
 \abs{$0}
 endsnippet
 
 priority 100
-snippet xx "times" iAm
+context math(context)
+snippet xx "times" iA
 \times $0
 endsnippet
 
 
 priority 200
-snippet oxx "otimes" iAm
+context math(context)
+snippet oxx "otimes" iA
 \otimes $0
 endsnippet
 
 priority 200
-snippet lxx "left semidirect product" iAm
+context math(context)
+snippet lxx "left semidirect product" iA
 \ltimes $0
 endsnippet
 
 priority 200
-snippet rxx "right semidirect product" iAm
+context math(context)
+snippet rxx "right semidirect product" iA
 \rtimes $0
 endsnippet
 
 ===== Arrows =====
 
-snippet -> "to" iAm
+context math(context)
+snippet -> "to" iA
 \to $0
 endsnippet
 
-snippet <- "left arrow" iAm
+context math(context)
+snippet <- "left arrow" iA
 \leftarrow $0
 endsnippet
 
-snippet => "implies" iAm
+context math(context)
+snippet => "implies" iA
 \implies $0
 endsnippet
 
-snippet =< "implied by" iAm
+context math(context)
+snippet =< "implied by" iA
 \impliedby $0
 endsnippet
 
-snippet iff "if and only if" iAm
+context math(context)
+snippet iff "if and only if" iA
 \iff $0
 endsnippet
 
-snippet `(\\?[a-zA-Z]\w*({?\w*})?)(hvec)` "Vector postfix" iAm
+context math(context)
+snippet `(\\?[a-zA-Z]\w*({?\w*})?)(hvec)` "Vector postfix" iA
 \vec{ ``rv = m[1]`` }
 endsnippet
 
 ===== Miscellaneous =====
-snippet fa iAm
+context math(context)
+snippet fa iA
 \forall $0
 endsnippet
 
 # avoid conflict with snippet "\exp" and "\times"
 # avoid conflict with \xi
 priority 200
-snippet exi iAm
+context math(context)
+snippet exi iA
 \exists $0
 endsnippet
 
-snippet ... "ellipsis" iAm
+context math(context)
+snippet ... "ellipsis" iA
 \dots $0
 endsnippet
 
-snippet c... "cdots" iAm
+context math(context)
+snippet c... "cdots" iA
 \cdots $0
 endsnippet
 
-snippet ** "cdot" iAm
+context math(context)
+snippet ** "cdot" iA
 \cdot $0
 endsnippet
 
 priority 100
-snippet oo "infinity" iAm
+context math(context)
+snippet oo "infinity" iA
 \infty $0
 endsnippet
 ===== Letter Styles =====
 
-snippet RR "real number" iAm
+context math(context)
+snippet RR "real number" iA
 \R
 endsnippet
 
-snippet ZZ "integer" iAm
+context math(context)
+snippet ZZ "integer" iA
 \Z
 endsnippet
 
-snippet NN "natural number" iAm
+context math(context)
+snippet NN "natural number" iA
 \N
 endsnippet
 
-snippet QQ "rational number" iAm
+context math(context)
+snippet QQ "rational number" iA
 \Q
 endsnippet
 
-snippet CC "complex number" iAm
+context math(context)
+snippet CC "complex number" iA
 \C
 endsnippet
 
-snippet TT "transpose" iAm
+context math(context)
+snippet TT "transpose" iA
 ^{\mathrm{T}}
 endsnippet
 
-snippet `([A-Za-z])mscr` "Auto caligraphic" iAm
+context math(context)
+snippet `([A-Za-z])mscr` "Auto caligraphic" iA
 \mathscr{``rv = m[1]``}
 endsnippet
 
-snippet mscr "caligraphic" iAm
+context math(context)
+snippet mscr "caligraphic" iA
 \mathscr{${0:${VISUAL}}}
 endsnippet
 
-snippet `([A-Za-z])mbb` "Auto blackboard bold" iAm
+context math(context)
+snippet `([A-Za-z])mbb` "Auto blackboard bold" iA
 \mathbb{``rv = m[1]``}
 endsnippet
 
-snippet mbb "blackboard bold" iAm
+context math(context)
+snippet mbb "blackboard bold" iA
 \mathbb{${0:${VISUAL}}}
 endsnippet
 
-snippet `(\\)?([A-Za-z]+)mbf` "Auto boldface" iAm
+context math(context)
+snippet `(\\)?([A-Za-z]+)mbf` "Auto boldface" iA
 \bm{``rv = m[2]``}
 endsnippet
 
 # Require package bm
 # https://tex.stackexchange.com/questions/595/how-can-i-get-bold-math-symbols
-snippet mbf "boldface" iAm
+context math(context)
+snippet mbf "boldface" iA
 \bm{${0:${VISUAL}}}
 endsnippet
 
-snippet `([A-Za-z])mcal` "Auto caligraphic" iAm
+context math(context)
+snippet `([A-Za-z])mcal` "Auto caligraphic" iA
 \mathcal{``rv = m[1]``}
 endsnippet
 
-snippet mcal "caligraphic" iAm
+context math(context)
+snippet mcal "caligraphic" iA
 \mathcal{${0:${VISUAL}}}
 endsnippet
