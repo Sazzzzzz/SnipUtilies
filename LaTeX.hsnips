@@ -35,6 +35,10 @@ function gen_fraction(line) {
     return stripped.slice(0, i) + "\\frac{" + stripped.slice(i + 1, -1) + "}";
 }
 
+function list(context) {
+    return context.scopes.some(s => s.startsWith("meta.function.environment.list"));
+}
+
 endglobal
 
 # ===== Mathmatical Constants =====
@@ -74,12 +78,24 @@ snippet del "delta" iAm
 \delta
 endsnippet
 
+snippet Del "Delta" iAm
+\Delta
+endsnippet
+
 snippet alp "alpha" iAm
 \alpha
 endsnippet
 
 snippet sig "sigma" iAm
 \sigma
+endsnippet
+
+snippet `(?<!\\)gam` "gamma" iAm
+\gamma
+endsnippet
+
+snippet `(?<!\\)Gam` "Gamma" iAm
+\Gamma
 endsnippet
 
 priority 200
@@ -169,7 +185,7 @@ snippet `([A-Za-z])(\d)` "auto subscript for single digit" iAm
 endsnippet
 
 snippet `([A-Za-z])_(\d) ` "auto bracklet for single digit subscript" iAm
-`` rv = m[1] + "_{" + m[2] + "} " ``
+`` rv = m[1] + "_{" + m[2] + "}"``
 endsnippet
 
 priority 100
@@ -185,22 +201,22 @@ endsnippet
 # There is a heated discussion about the typesetting of \d 
 # https://tex.stackexchange.com/questions/14821/whats-the-proper-way-to-typeset-a-differential-operator/637613
 # ISO Standard: https://tug.org/tugboat/tb18-1/tb54becc.pdf
-# I am currently using `\renewcommand{\d}[1]{\operatorname{d}\!{#1}}`
+# I am currently using derivative package
 # But you shouldn't worry about it as long as you are consistent throughout the document
 
 priority 200
 snippet `(?<!\\)dintt` "definite integral" iAm
-\int_{${1:a}}^{${2:b}} ${4:${VISUAL}} \\d{5:x}$0
+\int_{${1:0}}^{${2:\infty}} ${4:${VISUAL}} \\d{${5:x}}$0
 endsnippet
 
 priority 200
 snippet `(?<!\\)intq` "line integral" iAm
-\int_{${1:L}} ${2:${VISUAL}} \\d{3:s}$0
+\int_{${1:L}} ${2:${VISUAL}} \\d{${3:s}}$0
 endsnippet
 
 priority 100
-snippet `(?<!\\)intt` "integral" iAm 
-\int ${1} \\d{2:x} ${4:${VISUAL}}
+snippet `(?<!\\)intt` "integral" iAm
+\int ${1} \\d{${2:x}} ${4:${VISUAL}}
 endsnippet
 
 priority 200
@@ -267,6 +283,14 @@ snippet `(?<!\\)prod` "product" iAm
 endsnippet
 
 
+snippet `OVER` "over" iAm
+\overbrace{${1:${VISUAL}}}
+endsnippet
+
+snippet `UNDER` "under" iAm
+\underbrace{${1:${VISUAL}}}
+endsnippet
+
 # ====== Structure of the Document ======
 # End tabbing as soon as possible to allow room for GitHub Copilot
 snippet `(#{1,5})\s` "Headings" iA
@@ -279,40 +303,65 @@ ${0:${VISUAL}}
 \end{${1:align*}}
 endsnippet
 
-snippet `^\+\s` "enumerate list" iA
+context list(context)
+snippet `^\s*\+\s` "enumerate list gen" iA
+\item ${0}
+endsnippet
+
+snippet `^\s*\+\s` "enumerate list gen" iA
 \begin{enumerate}
-	\item ${0}
+    \item ${0}
 \end{enumerate}
 endsnippet
 
-snippet `^1\.\s` "itemize list" iA
+snippet `^1\.\s` "itemize list gen" iA
 \begin{itemize}
-	\item ${0}
+    \item ${0}
 \end{itemize}
 endsnippet
 
-snippet `^\-\s` "description list" iA
+snippet `^\-\s` "description list gen" iA
 \begin{description}
     \item[${1:label}] ${0}
 \end{description}
 endsnippet
 
-snippet pob "Problem" iA
-\begin{problem}
-${1:${VISUAL}}
+snippet `^\s*prob` "Problem" iA
+\begin{problem}{$1}
+${0:${VISUAL}}
 \end{problem}
 endsnippet
 
-snippet sol "Solution" iA
-\begin{solution}
-${1:${VISUAL}}
-\end{solution}
+snippet `^\s*def` "Definition" iA
+\begin{definition}{$1}
+${0:${VISUAL}}
+\end{definition}
 endsnippet
 
-# For reasons that `soul` package is not compatible with Chinese documents
-# I use the following command to highlight
-# \newcommand\hl{\bgroup\markoverwith
-# {\textcolor{yellow}{\rule[-.5ex]{2pt}{2.5ex}}}\ULon}
+snippet `^\s*thm` "Theorem" iA
+\begin{theorem}{$1}
+${0:${VISUAL}}
+\end{theorem}
+endsnippet
+
+snippet `^\s*claim` "Lemma" iA
+\begin{claim}{$1}
+${0:${VISUAL}}
+\end{claim}
+endsnippet
+
+snippet `^\s*note` "Note" iA
+\begin{note}{$1}
+${0:${VISUAL}}
+\end{note}
+endsnippet
+
+snippet `^\s*proof` "Proof" iA
+\begin{proof}
+${0:${VISUAL}}
+\end{proof}
+endsnippet
+
 snippet ==== "Highlight" iA
 \hl{${1:${VISUAL}}}
 endsnippet
@@ -449,10 +498,6 @@ snippet xx "times" iAm
 \times $0
 endsnippet
 
-priority 100
-snippet oo "circled times" iAm
-\circ $0
-endsnippet
 
 priority 200
 snippet oxx "otimes" iAm
@@ -511,11 +556,18 @@ snippet ... "ellipsis" iAm
 \dots $0
 endsnippet
 
+snippet c... "cdots" iAm
+\cdots $0
+endsnippet
+
 snippet ** "cdot" iAm
 \cdot $0
 endsnippet
 
-
+priority 100
+snippet oo "infinity" iAm
+\infty $0
+endsnippet
 ===== Letter Styles =====
 
 snippet RR "real number" iAm
@@ -529,7 +581,7 @@ endsnippet
 snippet NN "natural number" iAm
 \N
 endsnippet
-	
+
 snippet QQ "rational number" iAm
 \Q
 endsnippet
